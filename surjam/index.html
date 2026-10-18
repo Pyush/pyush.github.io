@@ -9,22 +9,28 @@
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="surjam">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="../">Pyush Apps</a>
-      <nav aria-label="Apps">
-        <a href="./" aria-current="page">SurJam</a>
-        <a href="../hokayantra/">Hokayantra</a>
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">P</span>Pyush Apps</a>
+      <nav class="site-nav" aria-label="Apps">
+        <a href="./" aria-current="page"><img src="../assets/surjam-icon.png" alt="" width="22" height="22"><span>SurJam</span></a>
+        <a href="../hokayantra/"><img src="../assets/hokayantra-icon.png" alt="" width="22" height="22"><span>Hokayantra</span></a>
+        <a href="../mathsurge/"><img src="../assets/mathsurge-icon.png" alt="" width="22" height="22"><span>MathSurge</span></a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main id="main" class="wrap">
     <section class="app-hero">
       <img src="../assets/surjam-icon.png" alt="SurJam app icon" width="96" height="96">
-      <div>
+      <div class="app-hero-text">
         <h1>SurJam</h1>
         <p class="tagline">Play 15 Indian &amp; Western instruments offline, take lessons, tune and record jams.</p>
+      </div>
+      <div class="qr">
+        <img src="../assets/qr-surjam.svg" alt="QR code that opens SurJam on Google Play" width="96" height="96">
+        <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
     <div class="card-actions">
@@ -99,8 +105,38 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>Questions or ideas? <a href="mailto:androidpyus@gmail.com">androidpyus@gmail.com</a></span>
-      <span><a href="https://pyush.github.io/surjam-privacy/">Privacy policy</a> · <a href="../">All apps</a></span>
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">P</span>Pyush Apps</a>
+          <p>Small, private Android apps that work offline. No accounts, no sign-up.</p>
+        </div>
+        <nav aria-label="Apps">
+          <h2>Apps</h2>
+          <ul>
+            <li><a href="./">SurJam</a></li>
+            <li><a href="../hokayantra/">Hokayantra</a></li>
+            <li><a href="../mathsurge/">MathSurge</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Privacy policies">
+          <h2>Privacy</h2>
+          <ul>
+            <li><a href="https://pyush.github.io/surjam-privacy/">SurJam</a></li>
+            <li><a href="https://pyush.github.io/hokayantra-privacy/">Hokayantra</a></li>
+            <li><a href="https://pyush.github.io/mathsurge-privacy/">MathSurge</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:androidpyus@gmail.com">androidpyus@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Pyush Apps</span>
+        <span>Google Play is a trademark of Google LLC.</span>
+      </div>
     </div>
   </footer>
 </body>
