@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MathSurge Challenge</title>
+  <meta name="description" content="A friend sent you a MathSurge mental math challenge. Open it in the app or get MathSurge free on Google Play.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="../../assets/mathsurge-icon.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .challenge { text-align: center; padding: 40px 0 24px; }
+    .challenge img { border-radius: 22px; }
+    .challenge h1 { margin: 16px 0 8px; }
+    .challenge .tagline { margin: 0 auto 24px; max-width: 34em; }
+    .challenge .card-actions { justify-content: center; flex-wrap: wrap; }
+    .code-box { margin: 28px auto 0; max-width: 34em; text-align: left; }
+    .code-box code {
+      display: block; padding: 10px 12px; border-radius: 10px; overflow-wrap: anywhere;
+      font-size: 12px; background: rgba(127, 127, 127, 0.12); max-height: 6.5em; overflow: auto;
+    }
+    .code-box .btn { margin-top: 10px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body class="mathsurge">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../"><span class="brand-mark" aria-hidden="true">P</span>Pyush Apps</a>
+      <nav class="site-nav" aria-label="Apps">
+        <a href="../"><img src="../../assets/mathsurge-icon.png" alt="" width="22" height="22"><span>MathSurge</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="challenge">
+      <img src="../../assets/mathsurge-icon.png" alt="MathSurge app icon" width="96" height="96">
+      <h1 id="title">You've been challenged!</h1>
+      <p class="tagline" id="detail">A friend sent you a MathSurge mental math challenge.</p>
+
+      <div class="card-actions">
+        <a class="btn btn-play" id="open" href="#" hidden>Open in MathSurge</a>
+        <a class="btn btn-ghost" id="install" href="https://play.google.com/store/apps/details?id=com.mathsurge.app&amp;referrer=utm_source%3Dmathsurge%26utm_medium%3Dchallenge_link">
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M6 3.5v17l14-8.5z"/></svg>
+          Get MathSurge on Google Play
+        </a>
+      </div>
+
+      <div class="code-box" id="code-box" hidden>
+        <p class="note">Already have MathSurge? If it doesn't open by itself, copy this code and paste it into
+          <strong id="where">Arenas › Ghost Battle</strong>.</p>
+        <code id="code"></code>
+        <button class="btn btn-ghost" id="copy" type="button">Copy code</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-bottom">
+        <span>© 2026 Pyush Apps · <a href="https://pyush.github.io/mathsurge-privacy/">Privacy</a></span>
+        <span>Google Play is a trademark of Google LLC.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // The challenge code is in the URL fragment (#SURGE-...), so it never
+    // reaches the server. Everything below runs only in the visitor's browser
+    // and writes with textContent, never as HTML.
+    (function () {
+      var raw = decodeURIComponent((location.hash || '').slice(1));
+      var match = raw.match(/SURGE-[A-Za-z0-9_\-=]+/);
+      if (!match) return;
+      var code = match[0];
+      var isAssignment = code.indexOf('SURGE-ASSIGN-') === 0;
+
+      function decode(b64) {
+        try {
+          var s = b64.replace(/-/g, '+').replace(/_/g, '/');
+          while (s.length % 4) s += '=';
+          var bytes = atob(s);
+          var utf8 = decodeURIComponent(Array.prototype.map.call(bytes, function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+          }).join(''));
+          return JSON.parse(utf8);
+        } catch (e) {
+          return null;
+        }
+      }
+
+      var data = decode(code.replace(isAssignment ? 'SURGE-ASSIGN-' : 'SURGE-', ''));
+      var title = document.getElementById('title');
+      var detail = document.getElementById('detail');
+      if (isAssignment) {
+        title.textContent = (data && data.t) ? data.t : 'Math challenge';
+        detail.textContent = (data && data.a ? data.a + ' sent you' : 'You got') +
+          ' a MathSurge challenge' + (data && data.q ? ' with ' + data.q + ' questions' : '') + '.';
+        document.getElementById('where').textContent = 'Arenas › Custom Challenge › Take assignment';
+      } else if (data) {
+        title.textContent = 'Race ' + (data.cn || 'a friend') + "'s ghost";
+        detail.textContent = (data.cn || 'Your friend') + ' scored ' + (data.cs != null ? data.cs : '?') +
+          ' points on ' + (data.qc || 'a set of') + ' questions. Same questions, same clock: can you beat them?';
+      }
+
+      document.getElementById('code').textContent = code;
+      document.getElementById('code-box').hidden = false;
+
+      // Android: open the app with this challenge, or go to Play if it isn't installed.
+      if (/Android/i.test(navigator.userAgent)) {
+        var play = document.getElementById('install').href;
+        var open = document.getElementById('open');
+        open.href = 'intent://pyush.github.io/mathsurge/c/?code=' + encodeURIComponent(code) +
+          '#Intent;scheme=https;package=com.mathsurge.app;S.browser_fallback_url=' +
+          encodeURIComponent(play) + ';end';
+        open.hidden = false;
+      }
+
+      var copy = document.getElementById('copy');
+      copy.addEventListener('click', function () {
+        var done = function () { copy.textContent = 'Copied!'; };
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(code).then(done, function () {});
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

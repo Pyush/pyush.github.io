@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mathsurge.app",
+      "sha256_cert_fingerprints": [
+        "A4:AF:82:B7:F2:47:DF:5A:39:D2:71:92:BF:08:E9:C6:3B:E6:83:C6:70:84:9B:02:DB:10:2F:FF:2E:CA:8A:94"
+      ]
+    }
+  }
+]
