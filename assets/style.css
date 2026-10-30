@@ -12,6 +12,8 @@
   --hokayantra-2: #f2622e;
   --mathsurge: #0e7490;
   --mathsurge-2: #7c3aed;
+  --scribevault: #4f46e5;
+  --scribevault-2: #0891b2;
   --shadow: 0 1px 2px rgb(20 18 40 / 6%), 0 8px 24px rgb(20 18 40 / 6%);
 }
 @media (prefers-color-scheme: dark) {
@@ -29,6 +31,8 @@
     --hokayantra-2: #ff8a5c;
     --mathsurge: #22d3ee;
     --mathsurge-2: #a78bfa;
+  --scribevault: #818cf8;
+  --scribevault-2: #22d3ee;
     --shadow: none;
   }
 }
@@ -46,6 +50,8 @@
   --hokayantra-2: #ff8a5c;
   --mathsurge: #22d3ee;
   --mathsurge-2: #a78bfa;
+  --scribevault: #818cf8;
+  --scribevault-2: #22d3ee;
   --shadow: none;
 }
 
@@ -134,6 +140,7 @@ a { color: inherit; }
 .surjam { --accent: var(--surjam); --accent-2: var(--surjam-2); }
 .hokayantra { --accent: var(--hokayantra); --accent-2: var(--hokayantra-2); }
 .mathsurge { --accent: var(--mathsurge); --accent-2: var(--mathsurge-2); }
+.scribevault { --accent: var(--scribevault); --accent-2: var(--scribevault-2); }
 
 /* Buttons */
 .btn {
@@ -145,6 +152,9 @@ a { color: inherit; }
 .btn-play { background: var(--text); color: var(--bg); }
 .btn-play svg { width: 18px; height: 18px; }
 .btn-ghost { border-color: var(--rule); color: var(--text); }
+/* Not on Google Play yet: looks like the Play button but isn't a link. */
+.btn-soon { border: 1px dashed var(--accent, var(--rule)); color: var(--muted); cursor: default; }
+.btn-soon:hover { filter: none; }
 .btn:hover { filter: brightness(1.08); }
 .btn:focus-visible, a:focus-visible { outline: 3px solid var(--accent, var(--hokayantra)); outline-offset: 2px; }
 
