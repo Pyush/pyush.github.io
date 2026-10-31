@@ -18,6 +18,7 @@ APPS = {
     'hokayantra': 'com.hokayantra.app',
     'mathsurge': 'com.mathsurge.app',
     'scribevault': 'com.scribevault.app',
+    'undercover': 'com.undercoverimpostor.app',
 }
 
 for name, package in APPS.items():
