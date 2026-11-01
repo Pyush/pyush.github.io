@@ -19,6 +19,7 @@ APPS = {
     'mathsurge': 'com.mathsurge.app',
     'scribevault': 'com.scribevault.app',
     'undercover': 'com.undercoverimpostor.app',
+    'rasidly': 'com.rasidly.app',
 }
 
 for name, package in APPS.items():
