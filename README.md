@@ -19,11 +19,12 @@ Root of the GitHub Pages site at https://pyush.github.io/
 - `index.html`: home page with a card for each app
 - `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`, `scanrow/`: app pages (`/surjam/` is the website on SurJam's Play listing)
 - `mathsurge/c/`: MathSurge challenge links, with `.well-known/assetlinks.json` so they open in the app
+- `scripts/apps.py`: the list of apps that `scripts/sync-nav.py` and `scripts/make-qr.py` read
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
 - `app-ads.txt`: checked by AdMob for every app in the account
 
-Each app appears in four places, so update all of them when adding one: its card in `index.html`, its own page, the header `site-nav` and the footer's Apps and Privacy lists on every page. Its colours are `--<app>` and `--<app>-2` in `assets/style.css`.
+To add an app: add a line to `scripts/apps.py` and run `python3 scripts/sync-nav.py`, which rewrites the header's Apps menu and the footer on every page. Then add its card in `index.html`, its own page, and its colours (`--<app>` and `--<app>-2` in `assets/style.css`).
 
 ## Adding an app before it's on Google Play
 
-Until an app's Play page is public, use a `btn-soon` span ("Coming soon to Google Play") instead of the `btn-play` link and leave out the `qr` block, so visitors don't hit Play's "not found" page. Once it's live, add it to `APPS` in `scripts/make-qr.py`, run the script, and switch to the `btn-play` link with the QR block.
+Until an app's Play page is public, use a `btn-soon` span ("Coming soon to Google Play") instead of the `btn-play` link and leave out the `qr` block, so visitors don't hit Play's "not found" page. Once it's live, mark it live in `scripts/apps.py`, run `scripts/make-qr.py`, and switch to the `btn-play` link with the QR block.

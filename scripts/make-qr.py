@@ -4,7 +4,7 @@ Usage, from the repo root, with segno installed (pip install segno):
 
     python3 scripts/make-qr.py
 
-Each code opens the app's Google Play page. The referrer marks these
+Each code opens the Google Play page of an app marked live in scripts/apps.py. The referrer marks these
 installs as coming from this website in Play Console's acquisition reports.
 """
 
@@ -12,17 +12,12 @@ from pathlib import Path
 
 import segno
 
-ROOT = Path(__file__).resolve().parent.parent
-APPS = {
-    'surjam': 'com.surjam.app',
-    'hokayantra': 'com.hokayantra.app',
-    'mathsurge': 'com.mathsurge.app',
-    'scribevault': 'com.scribevault.app',
-    'undercover': 'com.undercoverimpostor.app',
-    'rasidly': 'com.rasidly.app',
-}
+from apps import APPS
 
-for name, package in APPS.items():
+ROOT = Path(__file__).resolve().parent.parent
+for name, _, package, _, live in APPS:
+    if not live:
+        continue
     url = (f'https://play.google.com/store/apps/details?id={package}'
            '&referrer=utm_source%3Dpyush.github.io%26utm_medium%3Dqr')
     qr = segno.make(url, error='m')
