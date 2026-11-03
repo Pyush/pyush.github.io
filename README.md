@@ -23,7 +23,7 @@ Root of the GitHub Pages site at https://pyush.github.io/
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
 - `app-ads.txt`: checked by AdMob for every app in the account
 
-To add an app: add a line to `scripts/apps.py` and run `python3 scripts/sync-nav.py`, which rewrites the header's Apps menu and the footer on every page. Then add its card in `index.html`, its own page, and its colours (`--<app>` and `--<app>-2` in `assets/style.css`).
+To add an app: add a line to `scripts/apps.py` and run `python3 scripts/sync-nav.py`, which rewrites the header's Apps menu and the footer on every page. Then add its card in `index.html` (with `data-tags` naming its filter categories), its own page, and its colours (`--<app>` and `--<app>-2` in `assets/style.css`).
 
 ## Adding an app before it's on Google Play
 
