@@ -12,11 +12,12 @@ Root of the GitHub Pages site at https://pyush.github.io/
 | ScribeVault | Private voice notes with on-device transcription, speaker detection and summaries | [/scribevault/](https://pyush.github.io/scribevault/) | [com.scribevault.app](https://play.google.com/store/apps/details?id=com.scribevault.app) | [scribevault-privacy](https://pyush.github.io/scribevault-privacy/) |
 | Undercover | Pass-and-play word party game: find the impostor | [/undercover/](https://pyush.github.io/undercover/) | [com.undercoverimpostor.app](https://play.google.com/store/apps/details?id=com.undercoverimpostor.app) | [undercover-word-imposter-privacy](https://pyush.github.io/undercover-word-imposter-privacy/) |
 | Rasidly | Offline receipt scanner and tax organiser: GST, bills, warranties and documents | [/rasidly/](https://pyush.github.io/rasidly/) | [com.rasidly.app](https://play.google.com/store/apps/details?id=com.rasidly.app) | [rasidly-privacy](https://pyush.github.io/rasidly-privacy/) |
+| Scanrow | Printed tables and PDFs to editable spreadsheets (coming soon to Play) | [/scanrow/](https://pyush.github.io/scanrow/) | [com.scanrow.app](https://play.google.com/store/apps/details?id=com.scanrow.app) | [scanrow-site/privacy](https://pyush.github.io/scanrow-site/privacy/) |
 
 ## Files
 
 - `index.html`: home page with a card for each app
-- `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`: app pages (`/surjam/` is the website on SurJam's Play listing)
+- `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`, `scanrow/`: app pages (`/surjam/` is the website on SurJam's Play listing)
 - `mathsurge/c/`: MathSurge challenge links, with `.well-known/assetlinks.json` so they open in the app
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
 - `app-ads.txt`: checked by AdMob for every app in the account

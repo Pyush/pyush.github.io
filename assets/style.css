@@ -18,6 +18,8 @@
   --undercover-2: #b45309;
   --rasidly: #047857;
   --rasidly-2: #0f766e;
+  --scanrow: #134e4a;
+  --scanrow-2: #0d9488;
   --shadow: 0 1px 2px rgb(20 18 40 / 6%), 0 8px 24px rgb(20 18 40 / 6%);
 }
 @media (prefers-color-scheme: dark) {
@@ -41,6 +43,8 @@
   --undercover-2: #fbbf24;
   --rasidly: #34d399;
   --rasidly-2: #5eead4;
+  --scanrow: #2dd4bf;
+  --scanrow-2: #99f6e4;
     --shadow: none;
   }
 }
@@ -64,6 +68,8 @@
   --undercover-2: #fbbf24;
   --rasidly: #34d399;
   --rasidly-2: #5eead4;
+  --scanrow: #2dd4bf;
+  --scanrow-2: #99f6e4;
   --shadow: none;
 }
 
@@ -99,8 +105,8 @@ a { color: inherit; }
 .site-nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
 .site-nav::-webkit-scrollbar { display: none; }
 .site-nav a {
-  display: inline-flex; align-items: center; gap: 8px; flex: none;
-  padding: 6px 12px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  padding: 6px 8px; border-radius: 999px;
   color: var(--muted); text-decoration: none; font-size: 0.93rem; font-weight: 600;
 }
 .site-nav a img { width: 22px; height: 22px; border-radius: 6px; }
@@ -155,6 +161,7 @@ a { color: inherit; }
 .scribevault { --accent: var(--scribevault); --accent-2: var(--scribevault-2); }
 .undercover { --accent: var(--undercover); --accent-2: var(--undercover-2); }
 .rasidly { --accent: var(--rasidly); --accent-2: var(--rasidly-2); }
+.scanrow { --accent: var(--scanrow); --accent-2: var(--scanrow-2); }
 
 /* Buttons */
 .btn {
