@@ -20,6 +20,8 @@
   --rasidly-2: #0f766e;
   --scanrow: #134e4a;
   --scanrow-2: #0d9488;
+  --kodijunction: #9f1239;
+  --kodijunction-2: #b45309;
   --shadow: 0 1px 2px rgb(20 18 40 / 6%), 0 8px 24px rgb(20 18 40 / 6%);
 }
 @media (prefers-color-scheme: dark) {
@@ -45,6 +47,8 @@
   --rasidly-2: #5eead4;
   --scanrow: #2dd4bf;
   --scanrow-2: #99f6e4;
+  --kodijunction: #fb7185;
+  --kodijunction-2: #fbbf24;
     --shadow: none;
   }
 }
@@ -70,6 +74,8 @@
   --rasidly-2: #5eead4;
   --scanrow: #2dd4bf;
   --scanrow-2: #99f6e4;
+  --kodijunction: #fb7185;
+  --kodijunction-2: #fbbf24;
   --shadow: none;
 }
 
@@ -235,6 +241,7 @@ a { color: inherit; }
 .undercover { --accent: var(--undercover); --accent-2: var(--undercover-2); }
 .rasidly { --accent: var(--rasidly); --accent-2: var(--rasidly-2); }
 .scanrow { --accent: var(--scanrow); --accent-2: var(--scanrow-2); }
+.kodijunction { --accent: var(--kodijunction); --accent-2: var(--kodijunction-2); }
 
 /* Buttons */
 .btn {
