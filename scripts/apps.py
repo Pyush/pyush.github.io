@@ -9,5 +9,5 @@ APPS = [
     ('undercover', 'Undercover', 'com.undercoverimpostor.app', 'https://pyush.github.io/undercover-word-imposter-privacy/', True),
     ('rasidly', 'Rasidly', 'com.rasidly.app', 'https://pyush.github.io/rasidly-privacy/', True),
     ('scanrow', 'Scanrow', 'com.scanrow.app', 'https://pyush.github.io/scanrow-site/privacy/', True),
-    ('kodijunction', 'Kodi Junction', 'com.kodijunction.app', 'https://pyush.github.io/kodi-junction-site/', False),
+    ('kodijunction', 'Kodi Junction', 'com.kodijunction.app', 'https://kodijunction.com/privacy.html', True),
 ]

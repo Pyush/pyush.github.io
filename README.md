@@ -13,7 +13,7 @@ Root of the GitHub Pages site at https://pyush.github.io/
 | Undercover | Pass-and-play word party game: find the impostor | [/undercover/](https://pyush.github.io/undercover/) | [com.undercoverimpostor.app](https://play.google.com/store/apps/details?id=com.undercoverimpostor.app) | [undercover-word-imposter-privacy](https://pyush.github.io/undercover-word-imposter-privacy/) |
 | Rasidly | Offline receipt scanner and tax organiser: GST, bills, warranties and documents | [/rasidly/](https://pyush.github.io/rasidly/) | [com.rasidly.app](https://play.google.com/store/apps/details?id=com.rasidly.app) | [rasidly-privacy](https://pyush.github.io/rasidly-privacy/) |
 | Scanrow | Printed tables and PDFs to editable spreadsheets | [/scanrow/](https://pyush.github.io/scanrow/) | [com.scanrow.app](https://play.google.com/store/apps/details?id=com.scanrow.app) | [scanrow-site/privacy](https://pyush.github.io/scanrow-site/privacy/) |
-| Kodi Junction | Gujarati cowrie board game, like Chowka Bhara: play the computer or pass and play (coming soon to Play) | [/kodijunction/](https://pyush.github.io/kodijunction/) | [com.kodijunction.app](https://play.google.com/store/apps/details?id=com.kodijunction.app) | [kodi-junction-site](https://pyush.github.io/kodi-junction-site/) |
+| Kodi Junction | Gujarati cowrie board game, like Chowka Bhara: play the computer, pass and play, or online | [/kodijunction/](https://pyush.github.io/kodijunction/) | [com.kodijunction.app](https://play.google.com/store/apps/details?id=com.kodijunction.app) | [kodijunction.com](https://kodijunction.com/privacy.html) |
 
 ## Files
 
