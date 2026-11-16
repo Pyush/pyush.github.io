@@ -15,7 +15,7 @@ Root of the GitHub Pages site at https://pyush.github.io/
 | Scanrow | Printed tables and PDFs to editable spreadsheets | [/scanrow/](https://pyush.github.io/scanrow/) | [com.scanrow.app](https://play.google.com/store/apps/details?id=com.scanrow.app) | [scanrow-site/privacy](https://pyush.github.io/scanrow-site/privacy/) |
 | Kodi Junction | Gujarati cowrie board game, like Chowka Bhara: play the computer, pass and play, or online | [/kodijunction/](https://pyush.github.io/kodijunction/) | [com.kodijunction.app](https://play.google.com/store/apps/details?id=com.kodijunction.app) | [kodijunction.com](https://kodijunction.com/privacy.html) |
 | Blokonia | Classic falling block puzzle: Classic, Daily Challenge, Sprint and Zen modes | [/blokonia/](https://pyush.github.io/blokonia/) | [com.blokonia.app](https://play.google.com/store/apps/details?id=com.blokonia.app) | [blokonia-site](https://pyush.github.io/blokonia-site/privacy.html) |
-| Snakes & Ladders: Editions | The classic dice board game in five editions: play the computer or pass and play (coming soon, in closed testing) | [/snakesladders/](https://pyush.github.io/snakesladders/) | com.snakesladders.editions | [snakes-ladders-privacy](https://pyush.github.io/snakes-ladders-privacy/) |
+| Snakes & Ladders: Editions | The classic dice board game in five editions: play the computer or pass and play | [/snakesladders/](https://pyush.github.io/snakesladders/) | [com.snakesladders.editions](https://play.google.com/store/apps/details?id=com.snakesladders.editions) | [snakes-ladders-privacy](https://pyush.github.io/snakes-ladders-privacy/) |
 
 ## Files
 

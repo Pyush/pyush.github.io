@@ -11,5 +11,5 @@ APPS = [
     ('scanrow', 'Scanrow', 'com.scanrow.app', 'https://pyush.github.io/scanrow-site/privacy/', True),
     ('kodijunction', 'Kodi Junction', 'com.kodijunction.app', 'https://kodijunction.com/privacy.html', True),
     ('blokonia', 'Blokonia', 'com.blokonia.app', 'https://pyush.github.io/blokonia-site/privacy.html', True),
-    ('snakesladders', 'Snakes &amp; Ladders', 'com.snakesladders.editions', 'https://pyush.github.io/snakes-ladders-privacy/', False),
+    ('snakesladders', 'Snakes &amp; Ladders', 'com.snakesladders.editions', 'https://pyush.github.io/snakes-ladders-privacy/', True),
 ]
