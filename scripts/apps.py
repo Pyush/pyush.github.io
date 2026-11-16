@@ -10,5 +10,5 @@ APPS = [
     ('rasidly', 'Rasidly', 'com.rasidly.app', 'https://pyush.github.io/rasidly-privacy/', True),
     ('scanrow', 'Scanrow', 'com.scanrow.app', 'https://pyush.github.io/scanrow-site/privacy/', True),
     ('kodijunction', 'Kodi Junction', 'com.kodijunction.app', 'https://kodijunction.com/privacy.html', True),
-    ('blokonia', 'Blokonia', 'com.blokonia.app', 'https://pyush.github.io/blokonia-site/privacy.html', False),
+    ('blokonia', 'Blokonia', 'com.blokonia.app', 'https://pyush.github.io/blokonia-site/privacy.html', True),
 ]
