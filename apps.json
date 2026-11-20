@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "com.kodijunction.app",
+      "name": "Kodi Junction",
+      "subtitle": "Cowrie Board Game",
+      "tagline": "Gujarati cowrie-shell board game. Play the computer, pass-and-play or online.",
+      "icon": "https://pyush.github.io/assets/kodijunction-icon.png",
+      "category": "games"
+    },
+    {
+      "id": "com.snakesladders.editions",
+      "name": "Snakes & Ladders",
+      "subtitle": "Editions",
+      "tagline": "The classic dice game in five editions. Pass-and-play, offline.",
+      "icon": "https://pyush.github.io/assets/snakesladders-icon.png",
+      "category": "games"
+    },
+    {
+      "id": "com.blokonia.app",
+      "name": "Blokonia",
+      "subtitle": "Falling Block Puzzle",
+      "tagline": "Classic, sprint, zen and daily challenge modes. Offline, no account.",
+      "icon": "https://pyush.github.io/assets/blokonia-icon.png",
+      "category": "games"
+    },
+    {
+      "id": "com.undercoverimpostor.app",
+      "name": "Undercover",
+      "subtitle": "Word Impostor",
+      "tagline": "Pass-and-play party game for 3 to 12 friends: secret words, clues and bluffing.",
+      "icon": "https://pyush.github.io/assets/undercover-icon.png",
+      "category": "games"
+    },
+    {
+      "id": "com.mathsurge.app",
+      "name": "MathSurge",
+      "subtitle": "Mental Math Sprint",
+      "tagline": "Fast mental math sprints, Vedic math tricks and brain games.",
+      "icon": "https://pyush.github.io/assets/mathsurge-icon.png",
+      "category": "learning"
+    },
+    {
+      "id": "com.surjam.app",
+      "name": "SurJam",
+      "subtitle": "Instruments & Learn",
+      "tagline": "15 Indian and Western instruments, lessons, a tuner and a recorder.",
+      "icon": "https://pyush.github.io/assets/surjam-icon.png",
+      "category": "music"
+    },
+    {
+      "id": "com.hokayantra.app",
+      "name": "Hokayantra",
+      "subtitle": "Compass & Tools",
+      "tagline": "15+ everyday tools in one app: compass, spirit level, expenses and more.",
+      "icon": "https://pyush.github.io/assets/hokayantra-icon.png",
+      "category": "productivity"
+    },
+    {
+      "id": "com.scribevault.app",
+      "name": "ScribeVault",
+      "subtitle": "Voice to Text",
+      "tagline": "Private voice notes with on-device AI transcription.",
+      "icon": "https://pyush.github.io/assets/scribevault-icon.png",
+      "category": "productivity"
+    },
+    {
+      "id": "com.rasidly.app",
+      "name": "Rasidly",
+      "subtitle": "Smart Receipts & Tax",
+      "tagline": "Scan receipts offline; keep GST, bills and warranties in a private vault.",
+      "icon": "https://pyush.github.io/assets/rasidly-icon.png",
+      "category": "productivity"
+    },
+    {
+      "id": "com.scanrow.app",
+      "name": "Scanrow",
+      "subtitle": "Table Scanner",
+      "tagline": "Turn printed tables and PDF pages into editable spreadsheets.",
+      "icon": "https://pyush.github.io/assets/scanrow-icon.png",
+      "category": "productivity"
+    }
+  ]
+}
