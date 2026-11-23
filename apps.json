@@ -18,6 +18,14 @@
       "category": "games"
     },
     {
+      "id": "com.mergequest.app",
+      "name": "Merge Quest",
+      "subtitle": "Discovery Puzzle",
+      "tagline": "Relaxing merge puzzle: discover 64 magical items and restore a fading world.",
+      "icon": "https://pyush.github.io/assets/mergequest-icon.png",
+      "category": "games"
+    },
+    {
       "id": "com.blokonia.app",
       "name": "Blokonia",
       "subtitle": "Falling Block Puzzle",
