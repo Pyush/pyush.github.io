@@ -26,6 +26,8 @@
   --blokonia-2: #7c3aed;
   --snakesladders: #1e40af;
   --snakesladders-2: #a16207;
+  --mergequest: #6d28d9;
+  --mergequest-2: #b45309;
   --shadow: 0 1px 2px rgb(20 18 40 / 6%), 0 8px 24px rgb(20 18 40 / 6%);
 }
 @media (prefers-color-scheme: dark) {
@@ -57,6 +59,8 @@
   --blokonia-2: #c084fc;
   --snakesladders: #93c5fd;
   --snakesladders-2: #fcd34d;
+  --mergequest: #c4b5fd;
+  --mergequest-2: #fcd34d;
     --shadow: none;
   }
 }
@@ -88,6 +92,8 @@
   --blokonia-2: #c084fc;
   --snakesladders: #93c5fd;
   --snakesladders-2: #fcd34d;
+  --mergequest: #c4b5fd;
+  --mergequest-2: #fcd34d;
   --shadow: none;
 }
 
@@ -256,6 +262,7 @@ a { color: inherit; }
 .kodijunction { --accent: var(--kodijunction); --accent-2: var(--kodijunction-2); }
 .blokonia { --accent: var(--blokonia); --accent-2: var(--blokonia-2); }
 .snakesladders { --accent: var(--snakesladders); --accent-2: var(--snakesladders-2); }
+.mergequest { --accent: var(--mergequest); --accent-2: var(--mergequest-2); }
 
 /* Buttons */
 .btn {

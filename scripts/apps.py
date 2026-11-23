@@ -12,4 +12,5 @@ APPS = [
     ('kodijunction', 'Kodi Junction', 'com.kodijunction.app', 'https://kodijunction.com/privacy.html', True),
     ('blokonia', 'Blokonia', 'com.blokonia.app', 'https://pyush.github.io/blokonia-site/privacy.html', True),
     ('snakesladders', 'Snakes &amp; Ladders', 'com.snakesladders.editions', 'https://pyush.github.io/snakes-ladders-privacy/', True),
+    ('mergequest', 'Merge Quest', 'com.mergequest.app', 'https://pyush.github.io/mergequest-site/privacy.html', False),
 ]

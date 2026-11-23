@@ -16,11 +16,12 @@ Root of the GitHub Pages site at https://pyush.github.io/
 | Kodi Junction | Gujarati cowrie board game, like Chowka Bhara: play the computer, pass and play, or online | [/kodijunction/](https://pyush.github.io/kodijunction/) | [com.kodijunction.app](https://play.google.com/store/apps/details?id=com.kodijunction.app) | [kodijunction.com](https://kodijunction.com/privacy.html) |
 | Blokonia | Classic falling block puzzle: Classic, Daily Challenge, Sprint and Zen modes | [/blokonia/](https://pyush.github.io/blokonia/) | [com.blokonia.app](https://play.google.com/store/apps/details?id=com.blokonia.app) | [blokonia-site](https://pyush.github.io/blokonia-site/privacy.html) |
 | Snakes & Ladders: Editions | The classic dice board game in five editions: play the computer or pass and play | [/snakesladders/](https://pyush.github.io/snakesladders/) | [com.snakesladders.editions](https://play.google.com/store/apps/details?id=com.snakesladders.editions) | [snakes-ladders-privacy](https://pyush.github.io/snakes-ladders-privacy/) |
+| Merge Quest: Discovery Puzzle | Relaxing merge puzzle: 64 magical items, patron orders, weekly events (coming soon, in Play review) | [/mergequest/](https://pyush.github.io/mergequest/) | com.mergequest.app | [mergequest-site](https://pyush.github.io/mergequest-site/privacy.html) |
 
 ## Files
 
 - `index.html`: home page with a card for each app
-- `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`, `scanrow/`, `kodijunction/`, `blokonia/`, `snakesladders/`: app pages (`/surjam/` is the website on SurJam's Play listing)
+- `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`, `scanrow/`, `kodijunction/`, `blokonia/`, `snakesladders/`, `mergequest/`: app pages (`/surjam/` is the website on SurJam's Play listing)
 - `mathsurge/c/`: MathSurge challenge links, with `.well-known/assetlinks.json` so they open in the app
 - `scripts/apps.py`: the list of apps that `scripts/sync-nav.py` and `scripts/make-qr.py` read
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
