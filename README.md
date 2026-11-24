@@ -17,11 +17,12 @@ Root of the GitHub Pages site at https://pyush.github.io/
 | Blokonia | Classic falling block puzzle: Classic, Daily Challenge, Sprint and Zen modes | [/blokonia/](https://pyush.github.io/blokonia/) | [com.blokonia.app](https://play.google.com/store/apps/details?id=com.blokonia.app) | [blokonia-site](https://pyush.github.io/blokonia-site/privacy.html) |
 | Snakes & Ladders: Editions | The classic dice board game in five editions: play the computer or pass and play | [/snakesladders/](https://pyush.github.io/snakesladders/) | [com.snakesladders.editions](https://play.google.com/store/apps/details?id=com.snakesladders.editions) | [snakes-ladders-privacy](https://pyush.github.io/snakes-ladders-privacy/) |
 | Merge Quest: Discovery Puzzle | Relaxing merge puzzle: 64 magical items, patron orders, weekly events | [/mergequest/](https://pyush.github.io/mergequest/) | [com.mergequest.app](https://play.google.com/store/apps/details?id=com.mergequest.app) | [mergequest-site](https://pyush.github.io/mergequest-site/privacy.html) |
+| BrainBoost: Brain Training | 20 quick brain games for memory, focus, math and logic, with a Daily Workout and Brain Age test (coming soon) | [/brainboost/](https://pyush.github.io/brainboost/) | [com.brainboost.game](https://play.google.com/store/apps/details?id=com.brainboost.game) | [brainboost-privacy](https://pyush.github.io/brainboost-privacy/) |
 
 ## Files
 
 - `index.html`: home page with a card for each app
-- `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`, `scanrow/`, `kodijunction/`, `blokonia/`, `snakesladders/`, `mergequest/`: app pages (`/surjam/` is the website on SurJam's Play listing)
+- `surjam/`, `hokayantra/`, `mathsurge/`, `scribevault/`, `undercover/`, `rasidly/`, `scanrow/`, `kodijunction/`, `blokonia/`, `snakesladders/`, `mergequest/`, `brainboost/`: app pages (`/surjam/` is the website on SurJam's Play listing)
 - `mathsurge/c/`: MathSurge challenge links, with `.well-known/assetlinks.json` so they open in the app
 - `scripts/apps.py`: the list of apps that `scripts/sync-nav.py` and `scripts/make-qr.py` read
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
