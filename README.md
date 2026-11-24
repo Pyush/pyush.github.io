@@ -17,7 +17,7 @@ Root of the GitHub Pages site at https://pyush.github.io/
 | Blokonia | Classic falling block puzzle: Classic, Daily Challenge, Sprint and Zen modes | [/blokonia/](https://pyush.github.io/blokonia/) | [com.blokonia.app](https://play.google.com/store/apps/details?id=com.blokonia.app) | [blokonia-site](https://pyush.github.io/blokonia-site/privacy.html) |
 | Snakes & Ladders: Editions | The classic dice board game in five editions: play the computer or pass and play | [/snakesladders/](https://pyush.github.io/snakesladders/) | [com.snakesladders.editions](https://play.google.com/store/apps/details?id=com.snakesladders.editions) | [snakes-ladders-privacy](https://pyush.github.io/snakes-ladders-privacy/) |
 | Merge Quest: Discovery Puzzle | Relaxing merge puzzle: 64 magical items, patron orders, weekly events | [/mergequest/](https://pyush.github.io/mergequest/) | [com.mergequest.app](https://play.google.com/store/apps/details?id=com.mergequest.app) | [mergequest-site](https://pyush.github.io/mergequest-site/privacy.html) |
-| BrainBoost: Brain Training | 20 quick brain games for memory, focus, math and logic, with a Daily Workout and Brain Age test (coming soon) | [/brainboost/](https://pyush.github.io/brainboost/) | [com.brainboost.game](https://play.google.com/store/apps/details?id=com.brainboost.game) | [brainboost-privacy](https://pyush.github.io/brainboost-privacy/) |
+| BrainBoost: Brain Training | 20 quick brain games for memory, focus, math and logic, with a Daily Workout and Brain Age test | [/brainboost/](https://pyush.github.io/brainboost/) | [com.brainboost.game](https://play.google.com/store/apps/details?id=com.brainboost.game) | [brainboost-privacy](https://pyush.github.io/brainboost-privacy/) |
 
 ## Files
 

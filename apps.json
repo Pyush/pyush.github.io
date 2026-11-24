@@ -26,6 +26,14 @@
       "category": "games"
     },
     {
+      "id": "com.brainboost.game",
+      "name": "BrainBoost",
+      "subtitle": "Brain Training",
+      "tagline": "20 quick brain games for memory, focus, math and logic, with a daily workout.",
+      "icon": "https://pyush.github.io/assets/brainboost-icon.png",
+      "category": "games"
+    },
+    {
       "id": "com.blokonia.app",
       "name": "Blokonia",
       "subtitle": "Falling Block Puzzle",

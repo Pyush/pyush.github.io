@@ -13,5 +13,5 @@ APPS = [
     ('blokonia', 'Blokonia', 'com.blokonia.app', 'https://pyush.github.io/blokonia-site/privacy.html', True),
     ('snakesladders', 'Snakes &amp; Ladders', 'com.snakesladders.editions', 'https://pyush.github.io/snakes-ladders-privacy/', True),
     ('mergequest', 'Merge Quest', 'com.mergequest.app', 'https://pyush.github.io/mergequest-site/privacy.html', True),
-    ('brainboost', 'BrainBoost', 'com.brainboost.game', 'https://pyush.github.io/brainboost-privacy/', False),
+    ('brainboost', 'BrainBoost', 'com.brainboost.game', 'https://pyush.github.io/brainboost-privacy/', True),
 ]
