@@ -131,7 +131,7 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 ## Phase 9: Outside channels
 
 - [ ] Social profiles, email signature, any printed QR codes or flyers that show the old site URL
-- [ ] Kodi Junction site footer: link to the studio site
+- [x] Kodi Junction site footer: "A game by Ultimate Play Studio" on the home and how-to-play pages (en, gu, hi), plus `parentOrganization` in its structured data
 
 ## Ongoing (don't break it later)
 
