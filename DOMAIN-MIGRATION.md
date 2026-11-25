@@ -136,7 +136,7 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
   - [x] YouTube: banner, picture, watermark, description (confirm the final handle; it was @pyushstudio)
   - [x] Instagram: https://www.instagram.com/ultimateplaystudio/ (Creator account)
   - [x] Facebook Page: https://www.facebook.com/ultimateplaystudio
-  - [ ] Threads
+  - [x] Threads: https://www.threads.net/@ultimateplaystudio (links, interests, Instagram badge)
   - [ ] TikTok
   - [ ] X
   - [ ] LinkedIn company page
