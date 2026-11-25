@@ -78,7 +78,7 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 
 - [x] Merge the `rebrand` branch (rebase it on the `CNAME` commit first)
 - [x] Repeat the Phase 4 checks on the rebranded pages
-- [ ] Sibling repos: update links that point to `pyush.github.io` in `mergequest-site/privacy.html`, `brainboost-privacy/index.md`, `undercover-word-imposter-privacy/index.md`, `mathsurge-privacy/index.html`, plus the other privacy repos and `kodi-junction-site` (footers, contact email)
+- [x] Sibling repos: links moved to ultimateplaystudio.com in all 10 privacy/site repos; "More apps" disclosures say "ultimateplaystudio.com (formerly pyush.github.io)"; developer named Ultimate Play Studio in the MathSurge, Undercover and BrainBoost terms. `kodi-junction-site` and `blokonia-site` / `scribevault-privacy` had no old links
 
 ## Phase 6: Play Console and AdMob (for each of the 12 apps)
 
