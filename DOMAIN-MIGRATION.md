@@ -133,14 +133,14 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
 ## Phase 9: Outside channels
 
 - Social profiles (images in `brand/`, made by `brand/make_social_assets.py`):
-  - [x] YouTube: banner, picture, watermark, description (confirm the final handle; it was @pyushstudio)
+  - [x] YouTube: https://www.youtube.com/@ultimateplaystudio (banner, picture, watermark, description; @pyushstudio still resolves to the same channel)
   - [x] Instagram: https://www.instagram.com/ultimateplaystudio/ (Creator account)
   - [x] Facebook Page: https://www.facebook.com/ultimateplaystudio
   - [x] Threads: https://www.threads.net/@ultimateplaystudio (links, interests, Instagram badge)
   - [x] TikTok: skipped, banned in India (since 2020; still blocked as of Feb 2026). Short videos go to Instagram Reels + YouTube Shorts instead
   - [x] X: https://x.com/UltPlayStudio
-  - [ ] LinkedIn company page
-  - [ ] Website footer and structured data (`sameAs`) link to every profile, once all exist
+  - [x] LinkedIn: https://www.linkedin.com/company/ultimateplaystudio
+  - [x] Website footer icons and Organization `sameAs` on every page, from `scripts/social.py`
 - [ ] Email signature, any printed QR codes or flyers that show the old site URL
 - [x] Kodi Junction site footer: "A game by Ultimate Play Studio" on the home and how-to-play pages (en, gu, hi), plus `parentOrganization` in its structured data
 

@@ -20,11 +20,13 @@ from pathlib import Path
 
 from apps import APPS as APP_LIST
 from seo_data import APPS, BRAND, EMAIL, HOME, SITE
+from social import SOCIAL
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY = datetime.date.today().isoformat()
 ORG = {'@type': 'Organization', '@id': SITE + '#organization', 'name': BRAND, 'url': SITE,
-       'logo': SITE + 'assets/logo-512.png', 'email': EMAIL}
+       'logo': SITE + 'assets/logo-512.png', 'email': EMAIL,
+       'sameAs': [url for _, url, _ in SOCIAL]}
 
 
 def esc(s):

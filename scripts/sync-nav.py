@@ -9,6 +9,7 @@ import re
 from pathlib import Path
 
 from apps import APPS
+from social import SOCIAL
 
 ROOT = Path(__file__).resolve().parent.parent
 GRID_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>'
@@ -38,12 +39,18 @@ def header(page, prefix):
 def footer(page, prefix):
     home = prefix or './'
     apps = '\n'.join(f'            <li><a href="{app_href(slug, page, prefix)}">{name}</a></li>' for slug, name, *_ in APPS)
+    social = '\n'.join(f'            <li><a href="{url}" rel="me noopener" aria-label="{name}" title="{name}">'
+                       f'<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="{d}"/></svg></a></li>'
+                       for name, url, d in SOCIAL)
     privacy = '\n'.join(f'            <li><a href="{url}">{name}</a></li>' for _, name, _, url, _ in APPS)
     return f'''<div class="footer-grid">
         <div class="footer-about">
           <a class="brand" href="{home}"><img class="brand-mark" src="{prefix or ''}assets/logo.svg" alt="" width="30" height="30">Ultimate Play Studio</a>
           <p>Small, private apps and games that work offline. No accounts, no sign-up.</p>
           <p><a href="mailto:androidpyus@gmail.com">androidpyus@gmail.com</a></p>
+          <ul class="social" aria-label="Ultimate Play Studio on social media">
+{social}
+          </ul>
         </div>
         <nav aria-label="Apps">
           <h2>Apps</h2>

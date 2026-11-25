@@ -28,6 +28,7 @@ Root of the GitHub Pages site at https://ultimateplaystudio.com/ (repo `pyush.gi
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
 - `app-ads.txt`: checked by AdMob for every app in the account
 - `scripts/seo_data.py` + `scripts/seo.py`: titles, descriptions, FAQs and structured data for search. Edit the data file, then run `python3 scripts/seo.py` (add `--images` to redraw the 1200×630 share images in `assets/og/`)
+- `scripts/social.py`: social profile links and icons, used by the footer (`sync-nav.py`) and the structured data (`seo.py`)
 - `robots.txt`, `sitemap.xml` (written by `seo.py`), `404.html`
 - `brand/`: logo and Play Console developer-page images
 
