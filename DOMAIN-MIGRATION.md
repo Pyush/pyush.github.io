@@ -51,7 +51,7 @@ Work through the phases in order. Tick each box as you go.
 - [x] `AAAA` on `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
 - [x] `CNAME` on `www` → `pyush.github.io`
 - [x] **Do not** use a wildcard `*` record (that allows takeover)
-- [ ] GitHub → profile Settings → Pages → **Add a verified domain** → add the `TXT` record it gives you → Verify
+- [x] GitHub → profile Settings → Pages → **Add a verified domain** → add the `TXT` record it gives you → Verify
 - [ ] Turn on **auto-renew** and **registrar lock** for the domain. If the domain ever expires, the old `pyush.github.io` URLs break too
 - [x] Wait for DNS, then check: `dig +short ultimateplaystudio.com` shows the four GitHub IPs, and `dig +short www.ultimateplaystudio.com` shows `pyush.github.io.`
 
