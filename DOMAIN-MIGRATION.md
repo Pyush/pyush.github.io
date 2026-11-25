@@ -112,16 +112,21 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 
 ## Phase 8: App updates (put them in each app's next release, no need for a special one)
 
-- [ ] **MathSurge** (most important):
+- [x] **MathSurge**: released in 1.2.5:
   - [x] `AndroidManifest.xml`: verified `intent-filter` for `ultimateplaystudio.com`; `pyush.github.io` kept in a separate non-autoVerify filter (branch `ultimateplaystudio-domain`)
   - [x] `lib/models/challenge_link.dart`: build new links on the new domain; **accept both** hosts when parsing, so links people already shared still work
   - [x] `test/challenge_link_test.dart`: tests for both hosts
   - [x] MathSurge 1.2.5 (build 11) built and committed (`dc4a76c`)
   - [x] Uploaded to production with `play_store_assets/tools/play_release_upload.py --apply` (25 Nov 2026), in review
   - [ ] After release, check: `adb shell pm get-app-links com.mathsurge.app` shows the new domain as `verified`
-- [ ] "More apps" feed URL to `https://ultimateplaystudio.com/apps.json`: BrainBoost, MathSurge, Undercover, MergeQuest (and their tests)
-- [ ] Legal / privacy links: ScribeVault, BrainBoost, MathSurge, Undercover, Snakes & Ladders, Blokonia (`Tetris-Block-Blast/lib/core/constants/app_constants.dart`)
-- [ ] Store-listing and README docs in each app repo
+
+- Other apps: **nothing is broken** (old URLs redirect), so each is done in its next normal release. One GitHub issue per app lists the exact files and lines:
+  - [ ] BrainBoost: https://github.com/Pyush/BrainBoost/issues/1 (**first fix `scripts/play_release.py` `CONTACT_WEBSITE`**: it rewrites the Play listing website on every run)
+  - [ ] Undercover: https://github.com/Pyush/undercover-word-impostor/issues/1
+  - [ ] Merge Quest: https://github.com/Pyush/MergeQuest/issues/1 (**first fix `scripts/play_publish.py` `contactWebsite`**: same reason)
+  - [ ] ScribeVault: https://github.com/Pyush/ScribeVault/issues/1 (fix `scripts/build_privacy_page.py` before regenerating the privacy page)
+  - [ ] Snakes & Ladders: https://github.com/Pyush/Snacks-and-Ladders/issues/1
+  - [ ] Blokonia: https://github.com/Pyush/BlockPulse/issues/2
 
 ## Phase 9: Outside channels
 
