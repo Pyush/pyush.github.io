@@ -120,7 +120,7 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
   - [x] `test/challenge_link_test.dart`: tests for both hosts
   - [x] MathSurge 1.2.5 (build 11) built and committed (`dc4a76c`)
   - [x] Uploaded to production with `play_store_assets/tools/play_release_upload.py --apply` (25 Nov 2026), in review
-  - [ ] After release, check: `adb shell pm get-app-links com.mathsurge.app` shows the new domain as `verified`
+  - [x] Checked on a Motorola Edge 60 Pro (Android 17) with 1.2.5 from Play: `ultimateplaystudio.com: verified`, and a challenge link opens MathSurge directly (25 Nov 2026)
 
 - Other apps: **nothing is broken** (old URLs redirect), so each is done in its next normal release. One GitHub issue per app lists the exact files and lines:
   - [ ] BrainBoost: https://github.com/Pyush/BrainBoost/issues/1 (**first fix `scripts/play_release.py` `CONTACT_WEBSITE`**: it rewrites the Play listing website on every run)
