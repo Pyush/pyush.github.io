@@ -132,7 +132,16 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
 
 ## Phase 9: Outside channels
 
-- [ ] Social profiles, email signature, any printed QR codes or flyers that show the old site URL
+- Social profiles (images in `brand/`, made by `brand/make_social_assets.py`):
+  - [x] YouTube: https://www.youtube.com/@ultimateplaystudio (banner, picture, watermark, description)
+  - [x] Instagram: https://www.instagram.com/ultimateplaystudio/ (Creator account)
+  - [x] Facebook Page: https://www.facebook.com/ultimateplaystudio
+  - [ ] Threads
+  - [ ] TikTok
+  - [ ] X
+  - [ ] LinkedIn company page
+  - [ ] Website footer and structured data (`sameAs`) link to every profile, once all exist
+- [ ] Email signature, any printed QR codes or flyers that show the old site URL
 - [x] Kodi Junction site footer: "A game by Ultimate Play Studio" on the home and how-to-play pages (en, gu, hi), plus `parentOrganization` in its structured data
 
 ## Ongoing (don't break it later)
