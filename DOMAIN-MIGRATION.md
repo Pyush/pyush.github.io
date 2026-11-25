@@ -106,8 +106,8 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
 
 ## Phase 7: Other Google services
 
-- [ ] Google Cloud console → OAuth consent screen (projects used for Play Games / Firebase): application home page, privacy policy URL and authorised domains
-- [ ] Firebase → Authentication → Authorised domains (if any app uses web sign-in)
+- [x] Google Cloud console → OAuth consent screen (projects used for Play Games / Firebase): application home page, privacy policy URL and authorised domains — BrainBoost: home `/brainboost/`, privacy, terms, authorised domain `ultimateplaystudio.com`; branding verified 25 Nov 2026
+- [x] Firebase → Authentication → Authorised domains: not needed (no app uses web sign-in)
 - [x] Google Search Console: **Domain** property for `ultimateplaystudio.com` verified by DNS `TXT`; `sitemap.xml` submitted (Success, 13 pages, 25 Nov 2026). No Change of address: `pyush.github.io` can no longer be verified because it redirects, and its 301s are enough
 - [x] Search Console: **Request indexing** sent for the home page and the main app pages (25 Nov 2026). Check **Indexing → Pages** in a week
 - [ ] Bing Webmaster Tools: sign in, **Import from Google Search Console** (also covers DuckDuckGo and Yahoo)
