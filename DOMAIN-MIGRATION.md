@@ -117,7 +117,7 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
   - [x] `lib/models/challenge_link.dart`: build new links on the new domain; **accept both** hosts when parsing, so links people already shared still work
   - [x] `test/challenge_link_test.dart`: tests for both hosts
   - [x] MathSurge 1.2.5 (build 11) built and committed (`dc4a76c`)
-  - [ ] Upload `MathSurge/build/app/outputs/bundle/release/app-release.aab` to Play Console with `play_store_assets/release_notes/1.2.5.txt`
+  - [x] Uploaded to production with `play_store_assets/tools/play_release_upload.py --apply` (25 Nov 2026), in review
   - [ ] After release, check: `adb shell pm get-app-links com.mathsurge.app` shows the new domain as `verified`
 - [ ] "More apps" feed URL to `https://ultimateplaystudio.com/apps.json`: BrainBoost, MathSurge, Undercover, MergeQuest (and their tests)
 - [ ] Legal / privacy links: ScribeVault, BrainBoost, MathSurge, Undercover, Snakes & Ladders, Blokonia (`Tetris-Block-Blast/lib/core/constants/app_constants.dart`)
