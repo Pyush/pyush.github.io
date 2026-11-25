@@ -46,30 +46,30 @@ Work through the phases in order. Tick each box as you go.
 
 ## Phase 2: DNS (at the registrar)
 
-- [ ] Delete any parking / default `A`, `AAAA` or `CNAME` records on `@` and `www`
-- [ ] `A` on `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-- [ ] `AAAA` on `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
-- [ ] `CNAME` on `www` → `pyush.github.io`
-- [ ] **Do not** use a wildcard `*` record (that allows takeover)
+- [x] Delete any parking / default `A`, `AAAA` or `CNAME` records on `@` and `www`
+- [x] `A` on `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- [x] `AAAA` on `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+- [x] `CNAME` on `www` → `pyush.github.io`
+- [x] **Do not** use a wildcard `*` record (that allows takeover)
 - [ ] GitHub → profile Settings → Pages → **Add a verified domain** → add the `TXT` record it gives you → Verify
 - [ ] Turn on **auto-renew** and **registrar lock** for the domain. If the domain ever expires, the old `pyush.github.io` URLs break too
-- [ ] Wait for DNS, then check: `dig +short ultimateplaystudio.com` shows the four GitHub IPs, and `dig +short www.ultimateplaystudio.com` shows `pyush.github.io.`
+- [x] Wait for DNS, then check: `dig +short ultimateplaystudio.com` shows the four GitHub IPs, and `dig +short www.ultimateplaystudio.com` shows `pyush.github.io.`
 
 ## Phase 3: Switch (about 5 minutes, best at a quiet time)
 
-- [ ] Repo `pyush/pyush.github.io` → Settings → Pages → Custom domain: `ultimateplaystudio.com` → Save (GitHub commits a `CNAME` file; pull it locally)
-- [ ] Wait for the DNS check ✅ and the certificate (up to about an hour)
-- [ ] Tick **Enforce HTTPS**
+- [x] Repo `pyush/pyush.github.io` → Settings → Pages → Custom domain: `ultimateplaystudio.com` → Save (GitHub commits a `CNAME` file; pull it locally)
+- [x] Wait for the DNS check ✅ and the certificate (up to about an hour)
+- [x] Tick **Enforce HTTPS**
 
 ## Phase 4: Check that it works
 
-- [ ] `https://ultimateplaystudio.com/` and `https://www.ultimateplaystudio.com/` load over HTTPS
-- [ ] `https://pyush.github.io/` → 301 to the new domain
-- [ ] Each app page `/surjam/` … `/brainboost/` loads on both domains (the old one redirects)
-- [ ] Every Play Console privacy URL, on its **old** address, redirects and loads (the 11 `pyush.github.io/...-privacy` / `-site` URLs)
-- [ ] `https://kodijunction.com/` unchanged
-- [ ] `https://ultimateplaystudio.com/app-ads.txt` and `/.well-known/assetlinks.json` return 200 with the right content
-- [ ] `https://ultimateplaystudio.com/apps.json` returns 200
+- [x] `https://ultimateplaystudio.com/` and `https://www.ultimateplaystudio.com/` load over HTTPS
+- [x] `https://pyush.github.io/` → 301 to the new domain
+- [x] Each app page `/surjam/` … `/brainboost/` loads on both domains (the old one redirects)
+- [x] Every Play Console privacy URL, on its **old** address, redirects and loads (the 11 `pyush.github.io/...-privacy` / `-site` URLs)
+- [x] `https://kodijunction.com/` unchanged
+- [x] `https://ultimateplaystudio.com/app-ads.txt` and `/.well-known/assetlinks.json` return 200 with the right content
+- [x] `https://ultimateplaystudio.com/apps.json` returns 200
 - [ ] "More apps" still loads in an installed BrainBoost / MathSurge (clear the cache or wait for the daily refresh)
 
 Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
