@@ -137,7 +137,7 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
   - [x] Instagram: https://www.instagram.com/ultimateplaystudio/ (Creator account)
   - [x] Facebook Page: https://www.facebook.com/ultimateplaystudio
   - [x] Threads: https://www.threads.net/@ultimateplaystudio (links, interests, Instagram badge)
-  - [ ] TikTok
+  - [x] TikTok: skipped, banned in India (since 2020; still blocked as of Feb 2026). Short videos go to Instagram Reels + YouTube Shorts instead
   - [ ] X
   - [ ] LinkedIn company page
   - [ ] Website footer and structured data (`sameAs`) link to every profile, once all exist
