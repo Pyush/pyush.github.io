@@ -133,7 +133,7 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
 ## Phase 9: Outside channels
 
 - Social profiles (images in `brand/`, made by `brand/make_social_assets.py`):
-  - [x] YouTube: https://www.youtube.com/@ultimateplaystudio (banner, picture, watermark, description)
+  - [x] YouTube: banner, picture, watermark, description (confirm the final handle; it was @pyushstudio)
   - [x] Instagram: https://www.instagram.com/ultimateplaystudio/ (Creator account)
   - [x] Facebook Page: https://www.facebook.com/ultimateplaystudio
   - [ ] Threads
