@@ -109,7 +109,7 @@ Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, devel
 - [ ] Google Cloud console → OAuth consent screen (projects used for Play Games / Firebase): application home page, privacy policy URL and authorised domains
 - [ ] Firebase → Authentication → Authorised domains (if any app uses web sign-in)
 - [x] Google Search Console: **Domain** property for `ultimateplaystudio.com` verified by DNS `TXT`; `sitemap.xml` submitted (Success, 13 pages, 25 Nov 2026). No Change of address: `pyush.github.io` can no longer be verified because it redirects, and its 301s are enough
-- [ ] Search Console: URL inspection → **Request indexing** for the home page and the main app pages (about 10 a day)
+- [x] Search Console: **Request indexing** sent for the home page and the main app pages (25 Nov 2026). Check **Indexing → Pages** in a week
 - [ ] Bing Webmaster Tools: sign in, **Import from Google Search Console** (also covers DuckDuckGo and Yahoo)
 
 ## Phase 8: App updates (put them in each app's next release, no need for a special one)
