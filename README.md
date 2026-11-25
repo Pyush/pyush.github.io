@@ -27,8 +27,11 @@ Root of the GitHub Pages site at https://ultimateplaystudio.com/ (repo `pyush.gi
 - `scripts/apps.py`: the list of apps that `scripts/sync-nav.py` and `scripts/make-qr.py` read
 - `assets/`: shared stylesheet, icons, screenshots and the "scan to install" QR codes (`qr-<app>.svg`, regenerate with `python3 scripts/make-qr.py`; needs `pip install segno`)
 - `app-ads.txt`: checked by AdMob for every app in the account
+- `scripts/seo_data.py` + `scripts/seo.py`: titles, descriptions, FAQs and structured data for search. Edit the data file, then run `python3 scripts/seo.py` (add `--images` to redraw the 1200×630 share images in `assets/og/`)
+- `robots.txt`, `sitemap.xml` (written by `seo.py`), `404.html`
+- `brand/`: logo and Play Console developer-page images
 
-To add an app: add a line to `scripts/apps.py` and run `python3 scripts/sync-nav.py`, which rewrites the header's Apps menu and the footer on every page. Then add its card in `index.html` (with `data-tags` naming its filter categories), its own page, and its colours (`--<app>` and `--<app>-2` in `assets/style.css`).
+To add an app: add its entry to `scripts/seo_data.py` too, and run `python3 scripts/seo.py --images` after the steps below. To add an app: add a line to `scripts/apps.py` and run `python3 scripts/sync-nav.py`, which rewrites the header's Apps menu and the footer on every page. Then add its card in `index.html` (with `data-tags` naming its filter categories), its own page, and its colours (`--<app>` and `--<app>-2` in `assets/style.css`).
 
 ## Adding an app before it's on Google Play
 

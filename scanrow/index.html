@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scanrow: Table Scanner</title>
-  <meta name="description" content="Scanrow turns printed tables, price lists and PDF pages into editable spreadsheets, with text recognition that runs on your phone and .xlsx or .csv export.">
+  <title>Scanrow – Scan Tables &amp; PDFs to Excel Spreadsheets (XLSX, CSV)</title>
+  <meta name="description" content="Turn printed tables, price lists and PDF pages into editable spreadsheets with on-device text recognition, then export to .xlsx or .csv. No account, no ads.">
   <link rel="icon" type="image/png" href="../assets/scanrow-icon.png">
+  <!-- seo -->
   <link rel="canonical" href="https://ultimateplaystudio.com/scanrow/">
+  <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ultimate Play Studio">
-  <meta property="og:title" content="Scanrow: Table Scanner">
-  <meta property="og:description" content="Scanrow turns printed tables, price lists and PDF pages into editable spreadsheets, with text recognition that runs on your phone and .xlsx or .csv export.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Scanrow – Scan Tables &amp; PDFs to Excel Spreadsheets (XLSX, CSV)">
+  <meta property="og:description" content="Turn printed tables, price lists and PDF pages into editable spreadsheets with on-device text recognition, then export to .xlsx or .csv. No account, no ads.">
   <meta property="og:url" content="https://ultimateplaystudio.com/scanrow/">
-  <meta property="og:image" content="https://ultimateplaystudio.com/assets/scanrow-icon.png">
-  <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:image" content="https://ultimateplaystudio.com/assets/og/scanrow.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ultimateplaystudio.com/#organization",
+      "name": "Ultimate Play Studio",
+      "url": "https://ultimateplaystudio.com/",
+      "logo": "https://ultimateplaystudio.com/assets/logo-512.png",
+      "email": "androidpyus@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ultimateplaystudio.com/scanrow/#app",
+      "name": "Scanrow",
+      "url": "https://ultimateplaystudio.com/scanrow/",
+      "description": "Turn printed tables, price lists and PDF pages into editable spreadsheets with on-device text recognition, then export to .xlsx or .csv. No account, no ads.",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "genre": "Productivity",
+      "image": "https://ultimateplaystudio.com/assets/scanrow-icon.png",
+      "screenshot": [
+        "https://ultimateplaystudio.com/assets/scanrow-1.webp",
+        "https://ultimateplaystudio.com/assets/scanrow-2.webp",
+        "https://ultimateplaystudio.com/assets/scanrow-3.webp",
+        "https://ultimateplaystudio.com/assets/scanrow-4.webp"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.scanrow.app",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.scanrow.app"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ultimateplaystudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Scanrow",
+          "item": "https://ultimateplaystudio.com/scanrow/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What file formats can Scanrow export?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scanrow exports a .xlsx spreadsheet or a .csv file, which you can send to a spreadsheet app, email or cloud drive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Scanrow read PDFs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Import a PDF or share one to Scanrow. It reads text directly from digital PDFs for exact results, and batch mode puts several pages in one workbook."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Scanrow free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scanrow is free to download. You can export or copy 3 scans every month and import PDFs of up to 20 pages at a time. Scanrow Pro, a monthly or yearly subscription, adds unlimited exports, larger PDFs and more recognition languages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my documents uploaded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your documents are read and stored on your phone and leave it only when you export or share them. There are no ads and no accounts."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- /seo -->
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="scanrow">
@@ -44,6 +152,11 @@
   </header>
 
   <main id="main" class="wrap">
+    <!-- seo:breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="../">Home</a></li><li><span aria-current="page">Scanrow</span></li></ol>
+    </nav>
+    <!-- /seo:breadcrumb -->
     <section class="app-hero">
       <img src="../assets/scanrow-icon.png" alt="Scanrow app icon" width="96" height="96">
       <div class="app-hero-text">
@@ -51,7 +164,7 @@
         <p class="tagline">Point your camera at a printed table or import a PDF, and Scanrow rebuilds the rows and columns as a spreadsheet you can edit and export.</p>
       </div>
       <div class="qr">
-        <img src="../assets/qr-scanrow.svg" alt="QR code that opens Scanrow on Google Play" width="96" height="96">
+        <img src="../assets/qr-scanrow.svg" alt="QR code that opens Scanrow on Google Play" width="96" height="96" loading="lazy" decoding="async">
         <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
@@ -66,9 +179,9 @@
     <section class="page-shots" aria-label="Screenshots">
       <div class="shots">
         <img src="../assets/scanrow-1.webp" alt="Straighten screen with corner handles on a photographed price table" width="360" height="720">
-        <img src="../assets/scanrow-2.webp" alt="Editable table recognized from a scan, with an Export .xlsx button" width="360" height="720">
-        <img src="../assets/scanrow-3.webp" alt="Export sheet offering a spreadsheet or CSV file" width="360" height="720">
-        <img src="../assets/scanrow-4.webp" alt="Scan history with searchable saved tables" width="360" height="720">
+        <img src="../assets/scanrow-2.webp" alt="Editable table recognized from a scan, with an Export .xlsx button" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/scanrow-3.webp" alt="Export sheet offering a spreadsheet or CSV file" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/scanrow-4.webp" alt="Scan history with searchable saved tables" width="360" height="720" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -123,6 +236,29 @@
       <p class="note">Results depend on print and photo quality, so please check important figures before relying on them.</p>
     </section>
 
+    <!-- seo:faq -->
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">Scanrow: questions and answers</h2>
+      <div class="faq">
+        <details>
+          <summary>What file formats can Scanrow export?</summary>
+          <p>Scanrow exports a .xlsx spreadsheet or a .csv file, which you can send to a spreadsheet app, email or cloud drive.</p>
+        </details>
+        <details>
+          <summary>Can Scanrow read PDFs?</summary>
+          <p>Yes. Import a PDF or share one to Scanrow. It reads text directly from digital PDFs for exact results, and batch mode puts several pages in one workbook.</p>
+        </details>
+        <details>
+          <summary>Is Scanrow free?</summary>
+          <p>Scanrow is free to download. You can export or copy 3 scans every month and import PDFs of up to 20 pages at a time. Scanrow Pro, a monthly or yearly subscription, adds unlimited exports, larger PDFs and more recognition languages.</p>
+        </details>
+        <details>
+          <summary>Are my documents uploaded?</summary>
+          <p>No. Your documents are read and stored on your phone and leave it only when you export or share them. There are no ads and no accounts.</p>
+        </details>
+      </div>
+    </section>
+    <!-- /seo:faq -->
     <section class="section">
       <h2>Privacy</h2>
       <p class="note">No sign-in and no accounts. Your documents are read and stored on your phone and aren't uploaded; they leave it only when you export or share them. The internet is used for Google Play billing and for diagnostic data that Google ML Kit sends to Google. There are no ads. Read the <a href="https://ultimateplaystudio.com/scanrow-site/privacy/">privacy policy</a> and <a href="https://ultimateplaystudio.com/scanrow-site/terms/">terms</a>.</p>

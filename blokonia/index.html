@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blokonia: Falling Block Puzzle</title>
-  <meta name="description" content="Blokonia is a classic falling block puzzle game for Android. Rotate and drop the blocks, clear lines, and play Classic, Daily Challenge, Sprint and Zen modes offline. Free on Google Play.">
+  <title>Blokonia – Classic Falling Block Puzzle Game, Play Offline</title>
+  <meta name="description" content="A classic falling block puzzle for phones: rotate and drop blocks, clear lines and chase high scores in Classic, Daily Challenge, Sprint and Zen modes.">
   <link rel="icon" type="image/png" href="../assets/blokonia-icon.png">
+  <!-- seo -->
   <link rel="canonical" href="https://ultimateplaystudio.com/blokonia/">
+  <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ultimate Play Studio">
-  <meta property="og:title" content="Blokonia: Falling Block Puzzle">
-  <meta property="og:description" content="Blokonia is a classic falling block puzzle game for Android. Rotate and drop the blocks, clear lines, and play Classic, Daily Challenge, Sprint and Zen modes offline. Free on Google Play.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Blokonia – Classic Falling Block Puzzle Game, Play Offline">
+  <meta property="og:description" content="A classic falling block puzzle for phones: rotate and drop blocks, clear lines and chase high scores in Classic, Daily Challenge, Sprint and Zen modes.">
   <meta property="og:url" content="https://ultimateplaystudio.com/blokonia/">
-  <meta property="og:image" content="https://ultimateplaystudio.com/assets/blokonia-icon.png">
-  <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:image" content="https://ultimateplaystudio.com/assets/og/blokonia.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ultimateplaystudio.com/#organization",
+      "name": "Ultimate Play Studio",
+      "url": "https://ultimateplaystudio.com/",
+      "logo": "https://ultimateplaystudio.com/assets/logo-512.png",
+      "email": "androidpyus@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ultimateplaystudio.com/blokonia/#app",
+      "name": "Blokonia",
+      "url": "https://ultimateplaystudio.com/blokonia/",
+      "description": "A classic falling block puzzle for phones: rotate and drop blocks, clear lines and chase high scores in Classic, Daily Challenge, Sprint and Zen modes.",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "genre": "Puzzle",
+      "image": "https://ultimateplaystudio.com/assets/blokonia-icon.png",
+      "screenshot": [
+        "https://ultimateplaystudio.com/assets/blokonia-1.webp",
+        "https://ultimateplaystudio.com/assets/blokonia-2.webp",
+        "https://ultimateplaystudio.com/assets/blokonia-3.webp",
+        "https://ultimateplaystudio.com/assets/blokonia-4.webp"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.blokonia.app",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.blokonia.app"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ultimateplaystudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blokonia",
+          "item": "https://ultimateplaystudio.com/blokonia/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What game modes does Blokonia have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Classic with endless levels that speed up, a Daily Challenge with the same pieces for everyone, Sprint to clear 40 lines as fast as you can, and Zen with no game over."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Blokonia work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Blokonia works offline with no account to create, and your game saves automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Blokonia free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Blokonia is free to play, with ads and optional in-app purchases. Remove Ads, a one-time purchase, turns off banner and between-game ads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Blokonia accessible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Settings include colour-blind patterns and reduced motion, and sound, music and vibration can each be switched off."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- /seo -->
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="blokonia">
@@ -44,6 +152,11 @@
   </header>
 
   <main id="main" class="wrap">
+    <!-- seo:breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="../">Home</a></li><li><span aria-current="page">Blokonia</span></li></ol>
+    </nav>
+    <!-- /seo:breadcrumb -->
     <section class="app-hero">
       <img src="../assets/blokonia-icon.png" alt="Blokonia app icon" width="96" height="96">
       <div class="app-hero-text">
@@ -51,7 +164,7 @@
         <p class="tagline">A classic falling block puzzle, rebuilt for phones. Rotate and drop the blocks, fill rows to clear them, and chase a new best score as the speed climbs.</p>
       </div>
       <div class="qr">
-        <img src="../assets/qr-blokonia.svg" alt="QR code that opens Blokonia on Google Play" width="96" height="96">
+        <img src="../assets/qr-blokonia.svg" alt="QR code that opens Blokonia on Google Play" width="96" height="96" loading="lazy" decoding="async">
         <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
@@ -66,9 +179,9 @@
     <section class="page-shots" aria-label="Screenshots">
       <div class="shots">
         <img src="../assets/blokonia-1.webp" alt="Home screen with best score, the daily challenge, Sprint and Zen modes" width="360" height="720">
-        <img src="../assets/blokonia-2.webp" alt="A Classic game at level 7 with a T block about to drop and the ghost piece below" width="360" height="720">
-        <img src="../assets/blokonia-3.webp" alt="A Sprint run in the Neon Pulse theme with 13 lines left" width="360" height="720">
-        <img src="../assets/blokonia-4.webp" alt="Statistics with best score, a chart of the last 16 games and lifetime totals" width="360" height="720">
+        <img src="../assets/blokonia-2.webp" alt="A Classic game at level 7 with a T block about to drop and the ghost piece below" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/blokonia-3.webp" alt="A Sprint run in the Neon Pulse theme with 13 lines left" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/blokonia-4.webp" alt="Statistics with best score, a chart of the last 16 games and lifetime totals" width="360" height="720" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -117,6 +230,29 @@
       <p class="note">Blokonia is free to play, with ads and optional in-app purchases. Video ads play only when you choose to watch one to continue a game or preview a theme. Remove Ads, a one-time purchase through Google Play, turns off banner and between-game ads. The Neon Pulse and Classic Retro themes, and a Premium Bundle with all three, are also available.</p>
     </section>
 
+    <!-- seo:faq -->
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">Blokonia: questions and answers</h2>
+      <div class="faq">
+        <details>
+          <summary>What game modes does Blokonia have?</summary>
+          <p>Classic with endless levels that speed up, a Daily Challenge with the same pieces for everyone, Sprint to clear 40 lines as fast as you can, and Zen with no game over.</p>
+        </details>
+        <details>
+          <summary>Does Blokonia work offline?</summary>
+          <p>Yes. Blokonia works offline with no account to create, and your game saves automatically.</p>
+        </details>
+        <details>
+          <summary>Is Blokonia free?</summary>
+          <p>Yes. Blokonia is free to play, with ads and optional in-app purchases. Remove Ads, a one-time purchase, turns off banner and between-game ads.</p>
+        </details>
+        <details>
+          <summary>Is Blokonia accessible?</summary>
+          <p>Settings include colour-blind patterns and reduced motion, and sound, music and vibration can each be switched off.</p>
+        </details>
+      </div>
+    </section>
+    <!-- /seo:faq -->
     <section class="section">
       <h2>Privacy</h2>
       <p class="note">No sign-in and no accounts. Your scores, stats and settings are stored on your phone. The internet is used for Google Play purchases and for ads from Google AdMob, which asks for consent where the law requires it. Read the <a href="https://ultimateplaystudio.com/blokonia-site/privacy.html">privacy policy</a> and <a href="https://ultimateplaystudio.com/blokonia-site/terms.html">terms</a>.</p>

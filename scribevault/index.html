@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ScribeVault: Voice to Text</title>
-  <meta name="description" content="ScribeVault is a private voice recorder with on-device AI transcription in 18 languages, speaker detection, summaries and action items. Recordings are never uploaded.">
+  <title>ScribeVault – Private Voice to Text, Offline AI Transcription</title>
+  <meta name="description" content="Record meetings, lectures and voice notes and transcribe them on your phone in 18 languages. Speaker labels, summaries, action items. Encrypted, no ads.">
   <link rel="icon" type="image/png" href="../assets/scribevault-icon.png">
+  <!-- seo -->
   <link rel="canonical" href="https://ultimateplaystudio.com/scribevault/">
+  <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ultimate Play Studio">
-  <meta property="og:title" content="ScribeVault: Voice to Text">
-  <meta property="og:description" content="ScribeVault is a private voice recorder with on-device AI transcription in 18 languages, speaker detection, summaries and action items. Recordings are never uploaded.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="ScribeVault – Private Voice to Text, Offline AI Transcription">
+  <meta property="og:description" content="Record meetings, lectures and voice notes and transcribe them on your phone in 18 languages. Speaker labels, summaries, action items. Encrypted, no ads.">
   <meta property="og:url" content="https://ultimateplaystudio.com/scribevault/">
-  <meta property="og:image" content="https://ultimateplaystudio.com/assets/scribevault-icon.png">
-  <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:image" content="https://ultimateplaystudio.com/assets/og/scribevault.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ultimateplaystudio.com/#organization",
+      "name": "Ultimate Play Studio",
+      "url": "https://ultimateplaystudio.com/",
+      "logo": "https://ultimateplaystudio.com/assets/logo-512.png",
+      "email": "androidpyus@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ultimateplaystudio.com/scribevault/#app",
+      "name": "ScribeVault",
+      "url": "https://ultimateplaystudio.com/scribevault/",
+      "description": "Record meetings, lectures and voice notes and transcribe them on your phone in 18 languages. Speaker labels, summaries, action items. Encrypted, no ads.",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "genre": "Productivity",
+      "image": "https://ultimateplaystudio.com/assets/scribevault-icon.png",
+      "screenshot": [
+        "https://ultimateplaystudio.com/assets/scribevault-1.webp",
+        "https://ultimateplaystudio.com/assets/scribevault-2.webp",
+        "https://ultimateplaystudio.com/assets/scribevault-3.webp",
+        "https://ultimateplaystudio.com/assets/scribevault-4.webp"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.scribevault.app",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.scribevault.app"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ultimateplaystudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ScribeVault",
+          "item": "https://ultimateplaystudio.com/scribevault/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are my recordings uploaded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Audio is transcribed on your device and never sent to a server. The internet is used only to download speech models and for Google Play billing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ScribeVault work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Speech-to-text runs on your phone, offline after a one-time model download."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages does ScribeVault transcribe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ScribeVault transcribes 18 languages, each in its own script, including Hindi in Devanagari, and it can translate speech into English."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ScribeVault free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ScribeVault is free to download and includes 3 transcriptions a week, up to 2 minutes each. ScribeVault Pro, a monthly or yearly subscription through Google Play, removes the weekly limit and the 2-minute cap and adds PDF export."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- /seo -->
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="scribevault">
@@ -44,6 +152,11 @@
   </header>
 
   <main id="main" class="wrap">
+    <!-- seo:breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="../">Home</a></li><li><span aria-current="page">ScribeVault</span></li></ol>
+    </nav>
+    <!-- /seo:breadcrumb -->
     <section class="app-hero">
       <img src="../assets/scribevault-icon.png" alt="ScribeVault app icon" width="96" height="96">
       <div class="app-hero-text">
@@ -51,7 +164,7 @@
         <p class="tagline">Speak, and it writes it down. AI transcription that runs on your phone, so your recordings are never uploaded.</p>
       </div>
       <div class="qr">
-        <img src="../assets/qr-scribevault.svg" alt="QR code that opens ScribeVault on Google Play" width="96" height="96">
+        <img src="../assets/qr-scribevault.svg" alt="QR code that opens ScribeVault on Google Play" width="96" height="96" loading="lazy" decoding="async">
         <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
@@ -66,9 +179,9 @@
     <section class="page-shots" aria-label="Screenshots">
       <div class="shots">
         <img src="../assets/scribevault-1.webp" alt="ScribeVault home screen with voice notes" width="360" height="720">
-        <img src="../assets/scribevault-2.webp" alt="Transcript with two speakers labelled" width="360" height="720">
-        <img src="../assets/scribevault-3.webp" alt="Summary and action items from a meeting" width="360" height="720">
-        <img src="../assets/scribevault-4.webp" alt="ScribeVault Pro plans" width="360" height="720">
+        <img src="../assets/scribevault-2.webp" alt="Transcript with two speakers labelled" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/scribevault-3.webp" alt="Summary and action items from a meeting" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/scribevault-4.webp" alt="ScribeVault Pro plans" width="360" height="720" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -119,6 +232,29 @@
       <p class="note">ScribeVault is free to download and includes 3 transcriptions a week, up to 2 minutes each. ScribeVault Pro, a monthly or yearly subscription through Google Play, removes the weekly limit and the 2-minute cap and adds PDF export. You can cancel anytime in Google Play.</p>
     </section>
 
+    <!-- seo:faq -->
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">ScribeVault: questions and answers</h2>
+      <div class="faq">
+        <details>
+          <summary>Are my recordings uploaded?</summary>
+          <p>No. Audio is transcribed on your device and never sent to a server. The internet is used only to download speech models and for Google Play billing.</p>
+        </details>
+        <details>
+          <summary>Does ScribeVault work offline?</summary>
+          <p>Yes. Speech-to-text runs on your phone, offline after a one-time model download.</p>
+        </details>
+        <details>
+          <summary>Which languages does ScribeVault transcribe?</summary>
+          <p>ScribeVault transcribes 18 languages, each in its own script, including Hindi in Devanagari, and it can translate speech into English.</p>
+        </details>
+        <details>
+          <summary>Is ScribeVault free?</summary>
+          <p>ScribeVault is free to download and includes 3 transcriptions a week, up to 2 minutes each. ScribeVault Pro, a monthly or yearly subscription through Google Play, removes the weekly limit and the 2-minute cap and adds PDF export.</p>
+        </details>
+      </div>
+    </section>
+    <!-- /seo:faq -->
     <section class="section">
       <h2>Privacy</h2>
       <p class="note">No sign-in and no accounts. Audio is transcribed on your device and never sent to a server; the internet is used only to download speech models and for Google Play billing. There are no ads and no tracking. Read the <a href="https://ultimateplaystudio.com/scribevault-privacy/">privacy policy</a>.</p>

@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Merge Quest: Discovery Puzzle</title>
-  <meta name="description" content="Merge Quest is a relaxing merge puzzle game for Android. Merge magical items, fill patron orders and restore a fading fantasy world, with weekly events and 64 items to discover. Plays offline. Free on Google Play.">
+  <title>Merge Quest: Discovery Puzzle – Relaxing Fantasy Merge Game</title>
+  <meta name="description" content="Merge magical items, fill patron orders and restore a fading fantasy world. 64 items, weekly events, no time limits on the main board and offline play.">
   <link rel="icon" type="image/png" href="../assets/mergequest-icon.png">
+  <!-- seo -->
   <link rel="canonical" href="https://ultimateplaystudio.com/mergequest/">
+  <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ultimate Play Studio">
-  <meta property="og:title" content="Merge Quest: Discovery Puzzle">
-  <meta property="og:description" content="Merge Quest is a relaxing merge puzzle game for Android. Merge magical items, fill patron orders and restore a fading fantasy world, with weekly events and 64 items to discover. Plays offline. Free on Google Play.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Merge Quest: Discovery Puzzle – Relaxing Fantasy Merge Game">
+  <meta property="og:description" content="Merge magical items, fill patron orders and restore a fading fantasy world. 64 items, weekly events, no time limits on the main board and offline play.">
   <meta property="og:url" content="https://ultimateplaystudio.com/mergequest/">
-  <meta property="og:image" content="https://ultimateplaystudio.com/assets/mergequest-icon.png">
-  <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:image" content="https://ultimateplaystudio.com/assets/og/mergequest.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ultimateplaystudio.com/#organization",
+      "name": "Ultimate Play Studio",
+      "url": "https://ultimateplaystudio.com/",
+      "logo": "https://ultimateplaystudio.com/assets/logo-512.png",
+      "email": "androidpyus@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ultimateplaystudio.com/mergequest/#app",
+      "name": "Merge Quest: Discovery Puzzle",
+      "url": "https://ultimateplaystudio.com/mergequest/",
+      "description": "Merge magical items, fill patron orders and restore a fading fantasy world. 64 items, weekly events, no time limits on the main board and offline play.",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "genre": "Puzzle",
+      "image": "https://ultimateplaystudio.com/assets/mergequest-icon.png",
+      "screenshot": [
+        "https://ultimateplaystudio.com/assets/mergequest-1.webp",
+        "https://ultimateplaystudio.com/assets/mergequest-2.webp",
+        "https://ultimateplaystudio.com/assets/mergequest-3.webp",
+        "https://ultimateplaystudio.com/assets/mergequest-4.webp"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.mergequest.app",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.mergequest.app"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ultimateplaystudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Merge Quest: Discovery Puzzle",
+          "item": "https://ultimateplaystudio.com/mergequest/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you play Merge Quest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Drag two matching items together to make a higher-tier one, fill orders from the patrons who visit your board, and restore the world chapter by chapter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Merge Quest work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Merge Quest plays offline with no account to create."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Merge Quest free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Merge Quest is free to play, with ads and optional in-app purchases. Remove Ads, a one-time purchase, turns off the banner and the in-between ads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a time limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There are no time limits on the main board, and undo, hints and auto-merge help when you are stuck."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- /seo -->
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="mergequest">
@@ -44,6 +152,11 @@
   </header>
 
   <main id="main" class="wrap">
+    <!-- seo:breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="../">Home</a></li><li><span aria-current="page">Merge Quest: Discovery Puzzle</span></li></ol>
+    </nav>
+    <!-- /seo:breadcrumb -->
     <section class="app-hero">
       <img src="../assets/mergequest-icon.png" alt="Merge Quest app icon" width="96" height="96">
       <div class="app-hero-text">
@@ -51,7 +164,7 @@
         <p class="tagline">A relaxing merge puzzle in a magical fantasy world. Drag matching items together to create rarer ones, fill orders for the grove spirits, marsh folk and gnomes, and restore a fading world chapter by chapter.</p>
       </div>
       <div class="qr">
-        <img src="../assets/qr-mergequest.svg" alt="QR code that opens Merge Quest on Google Play" width="96" height="96">
+        <img src="../assets/qr-mergequest.svg" alt="QR code that opens Merge Quest on Google Play" width="96" height="96" loading="lazy" decoding="async">
         <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
@@ -66,9 +179,9 @@
     <section class="page-shots" aria-label="Screenshots">
       <div class="shots">
         <img src="../assets/mergequest-1.webp" alt="The merge board with two patron orders ready to deliver" width="360" height="720">
-        <img src="../assets/mergequest-2.webp" alt="The journey map at chapter 3, Glowcap Hollow" width="360" height="720">
-        <img src="../assets/mergequest-3.webp" alt="The Bloom Festival weekly event and its reward track" width="360" height="720">
-        <img src="../assets/mergequest-4.webp" alt="The Discovery Encyclopedia showing Aquatic Crystals" width="360" height="720">
+        <img src="../assets/mergequest-2.webp" alt="The journey map at chapter 3, Glowcap Hollow" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/mergequest-3.webp" alt="The Bloom Festival weekly event and its reward track" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/mergequest-4.webp" alt="The Discovery Encyclopedia showing Aquatic Crystals" width="360" height="720" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -118,6 +231,29 @@
       <p class="note">Merge Quest is free to play, with ads and optional in-app purchases such as gem packs, the weekly Event Pass and the Piggy Bank. Ads are a banner on menu screens and an occasional ad at natural breaks, from level 3. Optional reward videos give bonuses without paying. Remove Ads, a one-time purchase through Google Play, turns off the banner and the in-between ads.</p>
     </section>
 
+    <!-- seo:faq -->
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">Merge Quest: questions and answers</h2>
+      <div class="faq">
+        <details>
+          <summary>How do you play Merge Quest?</summary>
+          <p>Drag two matching items together to make a higher-tier one, fill orders from the patrons who visit your board, and restore the world chapter by chapter.</p>
+        </details>
+        <details>
+          <summary>Does Merge Quest work offline?</summary>
+          <p>Yes. Merge Quest plays offline with no account to create.</p>
+        </details>
+        <details>
+          <summary>Is Merge Quest free?</summary>
+          <p>Yes. Merge Quest is free to play, with ads and optional in-app purchases. Remove Ads, a one-time purchase, turns off the banner and the in-between ads.</p>
+        </details>
+        <details>
+          <summary>Is there a time limit?</summary>
+          <p>No. There are no time limits on the main board, and undo, hints and auto-merge help when you are stuck.</p>
+        </details>
+      </div>
+    </section>
+    <!-- /seo:faq -->
     <section class="section">
       <h2>Privacy</h2>
       <p class="note">No sign-in and no accounts. Your progress is stored on your phone. The internet is used for Google Play purchases, for ads from Google AdMob, which asks for consent where the law requires it, and for anonymous usage statistics through Google Analytics for Firebase. Read the <a href="https://ultimateplaystudio.com/mergequest-site/privacy.html">privacy policy</a> and <a href="https://ultimateplaystudio.com/mergequest-site/terms.html">terms</a>.</p>

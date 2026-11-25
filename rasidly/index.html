@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rasidly: Smart Receipts &amp; Tax</title>
-  <meta name="description" content="Rasidly scans receipts offline and keeps GST, bills, warranties and important documents in one private vault on your phone, with reports for your accountant.">
+  <title>Rasidly – Offline Receipt Scanner, GST Report &amp; Bill Reminders</title>
+  <meta name="description" content="Scan receipts on your phone with no internet and no account. GST input tax credit reports, bill and warranty reminders, document expiry alerts and budgets.">
   <link rel="icon" type="image/png" href="../assets/rasidly-icon.png">
+  <!-- seo -->
   <link rel="canonical" href="https://ultimateplaystudio.com/rasidly/">
+  <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ultimate Play Studio">
-  <meta property="og:title" content="Rasidly: Smart Receipts &amp; Tax">
-  <meta property="og:description" content="Rasidly scans receipts offline and keeps GST, bills, warranties and important documents in one private vault on your phone, with reports for your accountant.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Rasidly – Offline Receipt Scanner, GST Report &amp; Bill Reminders">
+  <meta property="og:description" content="Scan receipts on your phone with no internet and no account. GST input tax credit reports, bill and warranty reminders, document expiry alerts and budgets.">
   <meta property="og:url" content="https://ultimateplaystudio.com/rasidly/">
-  <meta property="og:image" content="https://ultimateplaystudio.com/assets/rasidly-icon.png">
-  <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:image" content="https://ultimateplaystudio.com/assets/og/rasidly.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ultimateplaystudio.com/#organization",
+      "name": "Ultimate Play Studio",
+      "url": "https://ultimateplaystudio.com/",
+      "logo": "https://ultimateplaystudio.com/assets/logo-512.png",
+      "email": "androidpyus@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ultimateplaystudio.com/rasidly/#app",
+      "name": "Rasidly",
+      "url": "https://ultimateplaystudio.com/rasidly/",
+      "description": "Scan receipts on your phone with no internet and no account. GST input tax credit reports, bill and warranty reminders, document expiry alerts and budgets.",
+      "operatingSystem": "Android",
+      "applicationCategory": "FinanceApplication",
+      "genre": "Finance",
+      "image": "https://ultimateplaystudio.com/assets/rasidly-icon.png",
+      "screenshot": [
+        "https://ultimateplaystudio.com/assets/rasidly-1.webp",
+        "https://ultimateplaystudio.com/assets/rasidly-2.webp",
+        "https://ultimateplaystudio.com/assets/rasidly-3.webp",
+        "https://ultimateplaystudio.com/assets/rasidly-4.webp"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.rasidly.app",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.rasidly.app"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ultimateplaystudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rasidly",
+          "item": "https://ultimateplaystudio.com/rasidly/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are my receipts uploaded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Receipts are read and stored on your phone and never uploaded. The internet is used only for Google Play billing and for usage metrics that Google ML Kit sends about text recognition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Rasidly make GST reports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Rasidly records GST, VAT or sales tax on every receipt and makes a GST input tax credit report with CGST, SGST, IGST and cess, by tax year or quarter. Rasidly keeps records and does not give tax advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Rasidly free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rasidly is free to download and includes 10 scans a month, bills and reminders, insights, one budget, the GST report, one warranty and two documents. Rasidly Pro, a monthly or yearly subscription, adds unlimited scans, PDF and CSV exports and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Rasidly have ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There are no ads, no sign-in and no accounts."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- /seo -->
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="rasidly">
@@ -44,6 +152,11 @@
   </header>
 
   <main id="main" class="wrap">
+    <!-- seo:breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="../">Home</a></li><li><span aria-current="page">Rasidly</span></li></ol>
+    </nav>
+    <!-- /seo:breadcrumb -->
     <section class="app-hero">
       <img src="../assets/rasidly-icon.png" alt="Rasidly app icon" width="96" height="96">
       <div class="app-hero-text">
@@ -51,7 +164,7 @@
         <p class="tagline">Scan a receipt and Rasidly reads the shop, date, total and tax, with no internet and no account. GST, bills, warranties and documents in one private vault.</p>
       </div>
       <div class="qr">
-        <img src="../assets/qr-rasidly.svg" alt="QR code that opens Rasidly on Google Play" width="96" height="96">
+        <img src="../assets/qr-rasidly.svg" alt="QR code that opens Rasidly on Google Play" width="96" height="96" loading="lazy" decoding="async">
         <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
@@ -66,9 +179,9 @@
     <section class="page-shots" aria-label="Screenshots">
       <div class="shots">
         <img src="../assets/rasidly-1.webp" alt="Scanning a stack of receipts in burst mode" width="360" height="720">
-        <img src="../assets/rasidly-2.webp" alt="Review screen with the shop, date, total and GST read from a receipt" width="360" height="720">
-        <img src="../assets/rasidly-3.webp" alt="Tax reports with claimed deductions and estimated savings" width="360" height="720">
-        <img src="../assets/rasidly-4.webp" alt="Duplicate receipt warning comparing two receipts side by side" width="360" height="720">
+        <img src="../assets/rasidly-2.webp" alt="Review screen with the shop, date, total and GST read from a receipt" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/rasidly-3.webp" alt="Tax reports with claimed deductions and estimated savings" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/rasidly-4.webp" alt="Duplicate receipt warning comparing two receipts side by side" width="360" height="720" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -119,6 +232,29 @@
       <p class="note">Rasidly is free to download and includes 10 scans a month, bills and reminders, insights, one budget, the GST report, one warranty and two documents. Rasidly Pro, a monthly or yearly subscription through Google Play, adds unlimited scans, PDF and CSV exports, claim PDFs, the mileage log, custom categories, and unlimited warranties, documents and budgets. You can cancel anytime in Google Play.</p>
     </section>
 
+    <!-- seo:faq -->
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">Rasidly: questions and answers</h2>
+      <div class="faq">
+        <details>
+          <summary>Are my receipts uploaded?</summary>
+          <p>No. Receipts are read and stored on your phone and never uploaded. The internet is used only for Google Play billing and for usage metrics that Google ML Kit sends about text recognition.</p>
+        </details>
+        <details>
+          <summary>Does Rasidly make GST reports?</summary>
+          <p>Yes. Rasidly records GST, VAT or sales tax on every receipt and makes a GST input tax credit report with CGST, SGST, IGST and cess, by tax year or quarter. Rasidly keeps records and does not give tax advice.</p>
+        </details>
+        <details>
+          <summary>Is Rasidly free?</summary>
+          <p>Rasidly is free to download and includes 10 scans a month, bills and reminders, insights, one budget, the GST report, one warranty and two documents. Rasidly Pro, a monthly or yearly subscription, adds unlimited scans, PDF and CSV exports and more.</p>
+        </details>
+        <details>
+          <summary>Does Rasidly have ads?</summary>
+          <p>No. There are no ads, no sign-in and no accounts.</p>
+        </details>
+      </div>
+    </section>
+    <!-- /seo:faq -->
     <section class="section">
       <h2>Privacy</h2>
       <p class="note">No sign-in and no accounts. Receipts are read and stored on your phone and never uploaded; the internet is used only for Google Play billing and for usage metrics that Google ML Kit sends about text recognition. There are no ads. Rasidly keeps records and does not give tax advice. Read the <a href="https://ultimateplaystudio.com/rasidly-privacy/">privacy policy</a> and <a href="https://ultimateplaystudio.com/rasidly-privacy/terms.html">terms of use</a>.</p>

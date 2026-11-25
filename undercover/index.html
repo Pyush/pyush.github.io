@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Undercover: Word Impostor</title>
-  <meta name="description" content="Undercover: Word Impostor is a pass-and-play social deduction party game for 3 to 12 players on one phone. Everyone gets a secret word, except the impostor.">
+  <title>Undercover: Word Impostor – Party Game for 3 to 12 Players</title>
+  <meta name="description" content="Pass-and-play word party game on one phone. Find the impostor with Civilian, Undercover and Mr. White roles, 85 word pairs and custom words. Plays offline.">
   <link rel="icon" type="image/png" href="../assets/undercover-icon.png">
+  <!-- seo -->
   <link rel="canonical" href="https://ultimateplaystudio.com/undercover/">
+  <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0e17" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ultimate Play Studio">
-  <meta property="og:title" content="Undercover: Word Impostor">
-  <meta property="og:description" content="Undercover: Word Impostor is a pass-and-play social deduction party game for 3 to 12 players on one phone. Everyone gets a secret word, except the impostor.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Undercover: Word Impostor – Party Game for 3 to 12 Players">
+  <meta property="og:description" content="Pass-and-play word party game on one phone. Find the impostor with Civilian, Undercover and Mr. White roles, 85 word pairs and custom words. Plays offline.">
   <meta property="og:url" content="https://ultimateplaystudio.com/undercover/">
-  <meta property="og:image" content="https://ultimateplaystudio.com/assets/undercover-icon.png">
-  <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:image" content="https://ultimateplaystudio.com/assets/og/undercover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ultimateplaystudio.com/#organization",
+      "name": "Ultimate Play Studio",
+      "url": "https://ultimateplaystudio.com/",
+      "logo": "https://ultimateplaystudio.com/assets/logo-512.png",
+      "email": "androidpyus@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ultimateplaystudio.com/undercover/#app",
+      "name": "Undercover",
+      "url": "https://ultimateplaystudio.com/undercover/",
+      "description": "Pass-and-play word party game on one phone. Find the impostor with Civilian, Undercover and Mr. White roles, 85 word pairs and custom words. Plays offline.",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "genre": "Party game",
+      "image": "https://ultimateplaystudio.com/assets/undercover-icon.png",
+      "screenshot": [
+        "https://ultimateplaystudio.com/assets/undercover-1.webp",
+        "https://ultimateplaystudio.com/assets/undercover-2.webp",
+        "https://ultimateplaystudio.com/assets/undercover-3.webp",
+        "https://ultimateplaystudio.com/assets/undercover-4.webp"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.undercoverimpostor.app",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.undercoverimpostor.app"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://ultimateplaystudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ultimateplaystudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Undercover",
+          "item": "https://ultimateplaystudio.com/undercover/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you play Undercover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pass the phone so each player privately sees their word. Civilians share a word, the Undercover gets a similar one, and Mr. White gets no word and has to bluff. Give one-word clues, discuss and vote someone out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many players does Undercover need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Undercover is for 3 to 12 players on a single device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Undercover free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Undercover is free to play with ads from Google AdMob. You can watch a short optional ad to unlock custom word packs, and there are no in-app purchases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Undercover work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Gameplay works offline and there is no sign-in or account. Player names, custom words and match stats stay on your phone."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- /seo -->
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="undercover">
@@ -44,6 +152,11 @@
   </header>
 
   <main id="main" class="wrap">
+    <!-- seo:breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="../">Home</a></li><li><span aria-current="page">Undercover</span></li></ol>
+    </nav>
+    <!-- /seo:breadcrumb -->
     <section class="app-hero">
       <img src="../assets/undercover-icon.png" alt="Undercover app icon" width="96" height="96">
       <div class="app-hero-text">
@@ -51,7 +164,7 @@
         <p class="tagline">One phone. One secret word. One impostor hiding in plain sight. A social deduction party game for 3 to 12 friends.</p>
       </div>
       <div class="qr">
-        <img src="../assets/qr-undercover.svg" alt="QR code that opens Undercover on Google Play" width="96" height="96">
+        <img src="../assets/qr-undercover.svg" alt="QR code that opens Undercover on Google Play" width="96" height="96" loading="lazy" decoding="async">
         <div><strong>Scan to install</strong><span>Scan with your phone's camera to open Google Play.</span></div>
       </div>
     </section>
@@ -66,9 +179,9 @@
     <section class="page-shots" aria-label="Screenshots">
       <div class="shots">
         <img src="../assets/undercover-1.webp" alt="Undercover lobby with six players and role counts" width="360" height="720">
-        <img src="../assets/undercover-2.webp" alt="Secret word card revealing the Undercover's word" width="360" height="720">
-        <img src="../assets/undercover-3.webp" alt="Voting screen with one player selected for elimination" width="360" height="720">
-        <img src="../assets/undercover-4.webp" alt="Match recap showing Mr. White stole the win" width="360" height="720">
+        <img src="../assets/undercover-2.webp" alt="Secret word card revealing the Undercover's word" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/undercover-3.webp" alt="Voting screen with one player selected for elimination" width="360" height="720" loading="lazy" decoding="async">
+        <img src="../assets/undercover-4.webp" alt="Match recap showing Mr. White stole the win" width="360" height="720" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -119,6 +232,29 @@
       <p class="note">Undercover is free to play. It shows ads from Google AdMob, and you can watch a short optional ad to unlock custom word packs. There are no in-app purchases.</p>
     </section>
 
+    <!-- seo:faq -->
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">Undercover: questions and answers</h2>
+      <div class="faq">
+        <details>
+          <summary>How do you play Undercover?</summary>
+          <p>Pass the phone so each player privately sees their word. Civilians share a word, the Undercover gets a similar one, and Mr. White gets no word and has to bluff. Give one-word clues, discuss and vote someone out.</p>
+        </details>
+        <details>
+          <summary>How many players does Undercover need?</summary>
+          <p>Undercover is for 3 to 12 players on a single device.</p>
+        </details>
+        <details>
+          <summary>Is Undercover free?</summary>
+          <p>Yes. Undercover is free to play with ads from Google AdMob. You can watch a short optional ad to unlock custom word packs, and there are no in-app purchases.</p>
+        </details>
+        <details>
+          <summary>Does Undercover work offline?</summary>
+          <p>Yes. Gameplay works offline and there is no sign-in or account. Player names, custom words and match stats stay on your phone.</p>
+        </details>
+      </div>
+    </section>
+    <!-- /seo:faq -->
     <section class="section">
       <h2>Privacy</h2>
       <p class="note">No sign-in and no accounts. Player names, custom words and match stats stay on your phone, and gameplay works offline. Ads are served by Google AdMob, which uses your device's advertising ID; you can change your ad choices in the app's Settings. Read the <a href="https://ultimateplaystudio.com/undercover-word-imposter-privacy/">privacy policy</a>.</p>
