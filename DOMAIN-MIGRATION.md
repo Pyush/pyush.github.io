@@ -82,25 +82,27 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 
 ## Phase 6: Play Console and AdMob (for each of the 12 apps)
 
+Done 25 Nov 2026: privacy policy URLs, terms declarations, store websites, developer name, developer page and AdMob app-ads.txt. Store websites checked through the Play API.
+
 | App | Developer website | Privacy policy URL | Store listing website |
 |---|---|---|---|
-| SurJam | [ ] | [ ] | [ ] |
-| Hokayantra | [ ] | [ ] | [ ] |
-| MathSurge | [ ] | [ ] | [ ] |
-| ScribeVault | [ ] | [ ] | [ ] |
-| Undercover | [ ] | [ ] | [ ] |
-| Rasidly | [ ] | [ ] | [ ] |
-| Scanrow | [ ] | [ ] | [ ] |
-| Kodi Junction | [ ] | n/a (kodijunction.com) | [ ] |
-| Blokonia | [ ] | [ ] | [ ] |
-| Snakes & Ladders | [ ] | [ ] | [ ] |
-| Merge Quest | [ ] | [ ] | [ ] |
-| BrainBoost | [ ] | [ ] | [ ] |
+| SurJam | [x] | [x] | [x] |
+| Hokayantra | [x] | [x] | [x] |
+| MathSurge | [x] | [x] | [x] |
+| ScribeVault | [x] | [x] | [x] |
+| Undercover | [x] | [x] | [x] |
+| Rasidly | [x] | [x] | [x] |
+| Scanrow | [x] | [x] | [x] |
+| Kodi Junction | [x] | n/a (kodijunction.com) | [x] |
+| Blokonia | [x] | [x] | [x] |
+| Snakes & Ladders | [x] | [x] | [x] |
+| Merge Quest | [x] | [x] | [x] |
+| BrainBoost | [x] | [x] | [x] |
 
-- [ ] Developer website: `https://ultimateplaystudio.com` (account level, Play Console → Developer page / account details)
-- [ ] Privacy policy URLs: the new address (e.g. `https://ultimateplaystudio.com/surjam-privacy/`)
+- [x] Developer website: `https://ultimateplaystudio.com` (account level, Play Console → Developer page / account details)
+- [x] Privacy policy URLs: the new address (e.g. `https://ultimateplaystudio.com/surjam-privacy/`)
 - [x] Contact email: unchanged for now (`androidpyus@gmail.com`)
-- [ ] AdMob → Apps → app-ads.txt: run "Check for updates" and confirm it shows **Verified** for every app (it can take up to 24 hours)
+- [x] AdMob → Apps → app-ads.txt: run "Check for updates" and confirm it shows **Verified** for every app (it can take up to 24 hours)
 
 ## Phase 7: Other Google services
 
