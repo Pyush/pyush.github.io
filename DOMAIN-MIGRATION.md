@@ -113,9 +113,10 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 ## Phase 8: App updates (put them in each app's next release, no need for a special one)
 
 - [ ] **MathSurge** (most important):
-  - [ ] `AndroidManifest.xml`: add an `intent-filter` with `android:host="ultimateplaystudio.com"` (`autoVerify`)
-  - [ ] `lib/models/challenge_link.dart`: build new links on the new domain; **accept both** hosts when parsing, so links people already shared still work
-  - [ ] `test/challenge_link_test.dart`: tests for both hosts
+  - [x] `AndroidManifest.xml`: verified `intent-filter` for `ultimateplaystudio.com`; `pyush.github.io` kept in a separate non-autoVerify filter (branch `ultimateplaystudio-domain`)
+  - [x] `lib/models/challenge_link.dart`: build new links on the new domain; **accept both** hosts when parsing, so links people already shared still work
+  - [x] `test/challenge_link_test.dart`: tests for both hosts
+  - [ ] Release MathSurge (merge the branch, bump the version, upload to Play)
   - [ ] After release, check: `adb shell pm get-app-links com.mathsurge.app` shows the new domain as `verified`
 - [ ] "More apps" feed URL to `https://ultimateplaystudio.com/apps.json`: BrainBoost, MathSurge, Undercover, MergeQuest (and their tests)
 - [ ] Legal / privacy links: ScribeVault, BrainBoost, MathSurge, Undercover, Snakes & Ladders, Blokonia (`Tetris-Block-Blast/lib/core/constants/app_constants.dart`)
