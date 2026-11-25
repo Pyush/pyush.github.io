@@ -70,14 +70,14 @@ Work through the phases in order. Tick each box as you go.
 - [x] `https://kodijunction.com/` unchanged
 - [x] `https://ultimateplaystudio.com/app-ads.txt` and `/.well-known/assetlinks.json` return 200 with the right content
 - [x] `https://ultimateplaystudio.com/apps.json` returns 200
-- [ ] "More apps" still loads in an installed BrainBoost / MathSurge (clear the cache or wait for the daily refresh)
+- [x] "More apps" still loads in an installed BrainBoost / MathSurge (clear the cache or wait for the daily refresh)
 
 Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 
 ## Phase 5: Go live with the rebrand
 
-- [ ] Merge the `rebrand` branch (rebase it on the `CNAME` commit first)
-- [ ] Repeat the Phase 4 checks on the rebranded pages
+- [x] Merge the `rebrand` branch (rebase it on the `CNAME` commit first)
+- [x] Repeat the Phase 4 checks on the rebranded pages
 - [ ] Sibling repos: update links that point to `pyush.github.io` in `mergequest-site/privacy.html`, `brainboost-privacy/index.md`, `undercover-word-imposter-privacy/index.md`, `mathsurge-privacy/index.html`, plus the other privacy repos and `kodi-junction-site` (footers, contact email)
 
 ## Phase 6: Play Console and AdMob (for each of the 12 apps)
