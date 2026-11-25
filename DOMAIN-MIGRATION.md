@@ -30,18 +30,18 @@ Work through the phases in order. Tick each box as you go.
 - [x] Logo / brand mark: **"UP" monogram**: a U whose right stem rises into a P, with a gold sparkle, on a coral → pink → purple tile (`assets/logo.svg`, `logo-512.png`, `apple-touch-icon.png`, `og-image.png`). `logo-512.png` can also be used for the Play Console developer page and social profiles
 - [x] Main address: `ultimateplaystudio.com`, with `www.` redirecting to it
 - [x] Contact email: **keep the current address for now** (move to the new domain later)
-- [ ] Play Console developer name: keep it, or rename to Ultimate Play Studio? (A rename is optional and separate from the domain)
+- [x] Play Console developer name: rename to **Ultimate Play Studio** (the terms now name it as the developer)
 
 ## Phase 1: Prepare without going live (no visitor impact)
 
-- [ ] Branch `rebrand` in this repo:
+- [x] Branch `rebrand` in this repo:
   - [x] Brand name, logo and `<title>` in `index.html` and every app page header/footer (via `scripts/sync-nav.py`)
   - [x] Replace `https://pyush.github.io/` with `https://ultimateplaystudio.com/` in all pages, `apps.json`, `scripts/apps.py` and `README.md`
   - [x] Add a favicon, `<link rel="canonical">` and Open Graph tags (`og:url`, `og:image`) on every page
   - [x] Add `robots.txt`, `sitemap.xml` and a branded `404.html`
   - [x] Keep `app-ads.txt` and `.well-known/assetlinks.json` unchanged
   - [x] The "Open in app" button on `mathsurge/c/` still uses `intent://pyush.github.io/...` on purpose: installed MathSurge versions only handle that host, so challenges still open in the app after the switch. Change it once the MathSurge update (Phase 8) is widely installed
-  - [ ] **Do not merge yet**
+  - [x] Merged after the custom domain went live
 - [x] QR codes: they point to Play Store links, so they don't need regenerating (only regenerate if the design changes)
 
 ## Phase 2: DNS (at the registrar)
@@ -99,14 +99,16 @@ Quick check for any URL: `curl -sIL <url> | grep -iE '^(HTTP|location)'`
 
 - [ ] Developer website: `https://ultimateplaystudio.com` (account level, Play Console → Developer page / account details)
 - [ ] Privacy policy URLs: the new address (e.g. `https://ultimateplaystudio.com/surjam-privacy/`)
-- [ ] Contact email updated, if you chose a new one
+- [x] Contact email: unchanged for now (`androidpyus@gmail.com`)
 - [ ] AdMob → Apps → app-ads.txt: run "Check for updates" and confirm it shows **Verified** for every app (it can take up to 24 hours)
 
 ## Phase 7: Other Google services
 
 - [ ] Google Cloud console → OAuth consent screen (projects used for Play Games / Firebase): application home page, privacy policy URL and authorised domains
 - [ ] Firebase → Authentication → Authorised domains (if any app uses web sign-in)
-- [ ] Google Search Console: add a **Domain** property for `ultimateplaystudio.com` (verify with DNS `TXT`), submit `sitemap.xml`; in the old `pyush.github.io` property, use **Change of address**
+- [x] Google Search Console: **Domain** property for `ultimateplaystudio.com` verified by DNS `TXT`; `sitemap.xml` submitted (Success, 13 pages, 25 Nov 2026). No Change of address: `pyush.github.io` can no longer be verified because it redirects, and its 301s are enough
+- [ ] Search Console: URL inspection → **Request indexing** for the home page and the main app pages (about 10 a day)
+- [ ] Bing Webmaster Tools: sign in, **Import from Google Search Console** (also covers DuckDuckGo and Yahoo)
 
 ## Phase 8: App updates (put them in each app's next release, no need for a special one)
 
