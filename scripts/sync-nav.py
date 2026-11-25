@@ -41,8 +41,8 @@ def footer(page, prefix):
     privacy = '\n'.join(f'            <li><a href="{url}">{name}</a></li>' for _, name, _, url, _ in APPS)
     return f'''<div class="footer-grid">
         <div class="footer-about">
-          <a class="brand" href="{home}"><span class="brand-mark" aria-hidden="true">P</span>Pyush Apps</a>
-          <p>Small, private Android apps that work offline. No accounts, no sign-up.</p>
+          <a class="brand" href="{home}"><img class="brand-mark" src="{prefix or ''}assets/logo.svg" alt="" width="30" height="30">Ultimate Play Studio</a>
+          <p>Small, private apps and games that work offline. No accounts, no sign-up.</p>
           <p><a href="mailto:androidpyus@gmail.com">androidpyus@gmail.com</a></p>
         </div>
         <nav aria-label="Apps">

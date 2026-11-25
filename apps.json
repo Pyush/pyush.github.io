@@ -6,7 +6,7 @@
       "name": "Kodi Junction",
       "subtitle": "Cowrie Board Game",
       "tagline": "Gujarati cowrie-shell board game. Play the computer, pass-and-play or online.",
-      "icon": "https://pyush.github.io/assets/kodijunction-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/kodijunction-icon.png",
       "category": "games"
     },
     {
@@ -14,7 +14,7 @@
       "name": "Snakes & Ladders",
       "subtitle": "Editions",
       "tagline": "The classic dice game in five editions. Pass-and-play, offline.",
-      "icon": "https://pyush.github.io/assets/snakesladders-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/snakesladders-icon.png",
       "category": "games"
     },
     {
@@ -22,7 +22,7 @@
       "name": "Merge Quest",
       "subtitle": "Discovery Puzzle",
       "tagline": "Relaxing merge puzzle: discover 64 magical items and restore a fading world.",
-      "icon": "https://pyush.github.io/assets/mergequest-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/mergequest-icon.png",
       "category": "games"
     },
     {
@@ -30,7 +30,7 @@
       "name": "BrainBoost",
       "subtitle": "Brain Training",
       "tagline": "20 quick brain games for memory, focus, math and logic, with a daily workout.",
-      "icon": "https://pyush.github.io/assets/brainboost-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/brainboost-icon.png",
       "category": "games"
     },
     {
@@ -38,7 +38,7 @@
       "name": "Blokonia",
       "subtitle": "Falling Block Puzzle",
       "tagline": "Classic, sprint, zen and daily challenge modes. Offline, no account.",
-      "icon": "https://pyush.github.io/assets/blokonia-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/blokonia-icon.png",
       "category": "games"
     },
     {
@@ -46,7 +46,7 @@
       "name": "Undercover",
       "subtitle": "Word Impostor",
       "tagline": "Pass-and-play party game for 3 to 12 friends: secret words, clues and bluffing.",
-      "icon": "https://pyush.github.io/assets/undercover-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/undercover-icon.png",
       "category": "games"
     },
     {
@@ -54,7 +54,7 @@
       "name": "MathSurge",
       "subtitle": "Mental Math Sprint",
       "tagline": "Fast mental math sprints, Vedic math tricks and brain games.",
-      "icon": "https://pyush.github.io/assets/mathsurge-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/mathsurge-icon.png",
       "category": "learning"
     },
     {
@@ -62,7 +62,7 @@
       "name": "SurJam",
       "subtitle": "Instruments & Learn",
       "tagline": "15 Indian and Western instruments, lessons, a tuner and a recorder.",
-      "icon": "https://pyush.github.io/assets/surjam-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/surjam-icon.png",
       "category": "music"
     },
     {
@@ -70,7 +70,7 @@
       "name": "Hokayantra",
       "subtitle": "Compass & Tools",
       "tagline": "15+ everyday tools in one app: compass, spirit level, expenses and more.",
-      "icon": "https://pyush.github.io/assets/hokayantra-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/hokayantra-icon.png",
       "category": "productivity"
     },
     {
@@ -78,7 +78,7 @@
       "name": "ScribeVault",
       "subtitle": "Voice to Text",
       "tagline": "Private voice notes with on-device AI transcription.",
-      "icon": "https://pyush.github.io/assets/scribevault-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/scribevault-icon.png",
       "category": "productivity"
     },
     {
@@ -86,7 +86,7 @@
       "name": "Rasidly",
       "subtitle": "Smart Receipts & Tax",
       "tagline": "Scan receipts offline; keep GST, bills and warranties in a private vault.",
-      "icon": "https://pyush.github.io/assets/rasidly-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/rasidly-icon.png",
       "category": "productivity"
     },
     {
@@ -94,7 +94,7 @@
       "name": "Scanrow",
       "subtitle": "Table Scanner",
       "tagline": "Turn printed tables and PDF pages into editable spreadsheets.",
-      "icon": "https://pyush.github.io/assets/scanrow-icon.png",
+      "icon": "https://ultimateplaystudio.com/assets/scanrow-icon.png",
       "category": "productivity"
     }
   ]

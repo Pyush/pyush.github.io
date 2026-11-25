@@ -7,6 +7,7 @@
   <meta name="description" content="A friend sent you a MathSurge mental math challenge. Open it in the app or get MathSurge free on Google Play.">
   <meta name="robots" content="noindex">
   <link rel="icon" type="image/png" href="../../assets/mathsurge-icon.png">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     .challenge { text-align: center; padding: 40px 0 24px; }
@@ -27,7 +28,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="../../"><span class="brand-mark" aria-hidden="true">P</span>Pyush Apps</a>
+      <a class="brand" href="../../"><img class="brand-mark" src="../../assets/logo.svg" alt="" width="30" height="30">Ultimate Play Studio</a>
       <nav class="site-nav" aria-label="Apps">
         <a href="../"><img src="../../assets/mathsurge-icon.png" alt="" width="22" height="22"><span>MathSurge</span></a>
       </nav>
@@ -60,7 +61,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-bottom">
-        <span>© 2026 Pyush Apps · <a href="https://pyush.github.io/mathsurge-privacy/">Privacy</a></span>
+        <span>© 2026 Ultimate Play Studio · <a href="https://ultimateplaystudio.com/mathsurge-privacy/">Privacy</a></span>
         <span>Google Play is a trademark of Google LLC.</span>
       </div>
     </div>
@@ -112,6 +113,8 @@
       if (/Android/i.test(navigator.userAgent)) {
         var play = document.getElementById('install').href;
         var open = document.getElementById('open');
+        // Keep pyush.github.io here: installed MathSurge versions only handle that host.
+        // Switch to ultimateplaystudio.com once a MathSurge release with the new host is widely installed.
         open.href = 'intent://pyush.github.io/mathsurge/c/?code=' + encodeURIComponent(code) +
           '#Intent;scheme=https;package=com.mathsurge.app;S.browser_fallback_url=' +
           encodeURIComponent(play) + ';end';
