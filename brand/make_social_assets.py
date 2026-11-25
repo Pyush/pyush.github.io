@@ -1,14 +1,20 @@
-"""YouTube channel art for Ultimate Play Studio, drawn from the UP mark in assets/logo.svg.
+"""Social profile art for Ultimate Play Studio, drawn from the UP mark in assets/logo.svg.
 
 Usage, from the repo root (needs Pillow and the Ubuntu Sans font):
 
-    python3 brand/make_youtube_assets.py
+    python3 brand/make_social_assets.py
 
 Writes to brand/youtube/:
 - banner-2560x1440.jpg   channel banner; logo, name and app icons sit inside the
                          1546x423 centre area that every device shows
 - profile-800.png        profile picture (opaque; YouTube crops it to a circle)
 - watermark-150.png      video watermark (transparent background)
+
+and to brand/social/ (crops of the same banner around its centre block):
+- facebook-cover-1640x624.jpg
+- x-header-1500x500.jpg
+- linkedin-cover-1128x191.jpg
+The profile picture (brand/youtube/profile-800.png) suits every platform.
 """
 
 import math
@@ -151,5 +157,15 @@ if __name__ == '__main__':
     b.save(OUT / 'banner-2560x1440.jpg', quality=92, optimize=True, progressive=True)
     profile().save(OUT / 'profile-800.png', optimize=True)
     rounded_logo(150).save(OUT / 'watermark-150.png', optimize=True)
+    social = ROOT / 'brand' / 'social'
+    social.mkdir(exist_ok=True)
+    cx, cy = 1280, 720
+    for name, (w, h), crop_w in [('facebook-cover-1640x624.jpg', (1640, 624), 1800),
+                                 ('x-header-1500x500.jpg', (1500, 500), 1800),
+                                 ('linkedin-cover-1128x191.jpg', (1128, 191), 2400)]:
+        crop_h = round(crop_w * h / w)
+        box = (cx - crop_w // 2, cy - crop_h // 2, cx + crop_w // 2, cy + crop_h // 2)
+        b.crop(box).resize((w, h), Image.LANCZOS).save(social / name, quality=92, optimize=True)
+        print(f'brand/social/{name}')
     for f in sorted(OUT.iterdir()):
         print(f.relative_to(ROOT), f'{f.stat().st_size // 1024} KB')
